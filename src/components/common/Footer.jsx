@@ -1,0 +1,92 @@
+"use client";
+
+import React from "react";
+import { Dumbbell, Mail, Phone, MapPin } from "lucide-react";
+import { footerLinks, navItems, socialLinks } from "@/constant";
+import { Button } from "../ui/button";
+import Link from "next/link";
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="px-4 sm:px-6 lg:px-18 py-16">
+        {/* Newsletter */}
+        <div className="mt-12 pt-8">
+          <div className="flex justify-between flex-col lg:flex-row gap-8 items-center pb-20">
+            <div>
+              <div className="pb-14">
+              <Link className="text-2xl" href="/">
+                {/* <img src='/' alt="Logo" /> */}
+                Logo
+              </Link>
+              </div>
+              <ul className="flex space-x-12 -my-8 font-medium items-center">
+                {navItems.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      aria-current="page"
+                      className="cursor-pointer"
+                      href={item.href}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col gap-y-2 pt-10">
+              <h4>Subscribe</h4>
+              <div className="space-x-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-background focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300 placeholder:text-background"
+                />
+                <Button
+                  variant="secondary"
+                  className="bg-primary-foreground p-6"
+                >
+                  Send
+                </Button>
+              </div>
+              <div>
+                <p className="text-sm font-light">
+                  By Subscribing you agree to our privacy policy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 lg:space-y-0">
+          <div className="flex space-x-6 mt-4 md:mt-0 underline">
+            <a
+              href="#"
+              className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#"
+              className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="#"
+              className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
+            >
+              Cookie Policy
+            </a>
+          </div>
+          <p className="text-gray-400 text-sm">
+            © 2025 PlatinumFitness. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
