@@ -399,6 +399,6 @@ export const ContactHero =
       href2: "",
       button1: "Start",
       button2: "Learn",
-      className: "text-7xl pt-4"
+      className: "text-6xl lg:text-7xl pt-4"
     }
   ]

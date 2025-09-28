@@ -6,7 +6,7 @@ import React from 'react'
 function ContactForm() {
     return (
         <section className="bg-secondary-foreground">
-            <div className="mx-auto flex justify-between px-4 sm:px-6 lg:px-8 py-14">
+            <div className="mx-auto flex justify-between flex-wrap lg:flex-nowrap px-4 sm:px-6 lg:px-8 py-14">
                 <div className="space-y-4 mb-16">
                     <h4>Connect</h4>
                     <h2 className="text-6xl font-bold pb-4">Get In Touch</h2>
@@ -42,7 +42,7 @@ function ContactForm() {
                     <div className="p-8">
                         {/* <h3 className="text-2xl font-semibold mb-6 text-primary">Send a Message</h3> */}
                         <form className="space-y-6">
-                            <div className="grid md:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-primary mb-2">
                                         First Name
@@ -50,7 +50,7 @@ function ContactForm() {
                                     <input
                                         type="text"
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
-                                        placeholder="John"
+                                        placeholder="First Name"
                                     />
                                 </div>
                                 <div>
@@ -60,7 +60,7 @@ function ContactForm() {
                                     <input
                                         type="text"
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
-                                        placeholder="John"
+                                        placeholder="Last Name"
                                     />
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ function ContactForm() {
                                         Phone Number
                                     </label>
                                     <input
-                                        type="number"
+                                        type="text"
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                         placeholder="123456789"
                                     />

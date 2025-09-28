@@ -36,7 +36,7 @@ function Faq() {
             <p className="text-lg lg:text-[1rem]">We're here to answer all your publishing questions.</p>
           </div>
           <div>
-            <Button variant="secondary">
+            <Button variant="secondary" className="text-primary">
               <Link href="/contact">Contact</Link>
             </Button>
           </div>
