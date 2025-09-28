@@ -38,7 +38,9 @@ function Navbar() {
               <DropdownMenuTrigger>Services For Author</DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuLabel><Link href="/publishing">Publishing</Link></DropdownMenuLabel>
+                <DropdownMenuLabel><Link href="/ghostwriting">GhostWriting</Link></DropdownMenuLabel>
               </DropdownMenuContent>
+              
             </DropdownMenu>
             <DropdownMenu>
               <DropdownMenuTrigger>Services For Business</DropdownMenuTrigger>

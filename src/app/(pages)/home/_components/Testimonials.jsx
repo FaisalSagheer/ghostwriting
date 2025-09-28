@@ -1,27 +1,12 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { cardData } from "@/constant";
 import { ArrowRight, Image } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 function Testimonials() {
-  const cardData = [
-    {
-      description: `
-      Undiscovered authors with unique ideas they 
-      want to see in print.`,
-    },
-    {
-      description: `
-      Entreprenures or thought leaders needing a 
-      professional book to boast credibility.`,
-    },
-    {
-      description: `
-      Aspiring thoughts targeting Amazon for side 
-      income or brand building.`,
-    },
-  ];
+ 
   return (
     <div className="bg-background text-primary">
       <div className="mx-auto max-w-8xl py-10 lg:py-26 px-10 lg:px-0">

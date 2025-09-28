@@ -1,19 +1,19 @@
 'use client'
-import ContactMini from '@/components/common/ContactMini'
-import Hero from '@/components/common/Hero'
-import { MarketingContact, MarketingHeroContent } from '@/constant'
 import React from 'react'
+import HeroMarketing from './_components/Hero'
+import ContactMin from './_components/ContactMini'
+import SecondarySection from './_components/Secondary'
+import TernarySection from './_components/TernarySection'
+import Visibility from './_components/Visibility'
 
 function Marketing() {
     return (
         <div>
-            {MarketingHeroContent.map((item, index) =>
-                <Hero data={item} key={index} />
-            )}
-
-            {MarketingContact.map((item, index) =>
-                    <ContactMini data={item} key={index}/>
-                )}
+            <HeroMarketing/>
+            <SecondarySection/>
+            <Visibility/> 
+            <TernarySection/>
+            <ContactMin/>
         </div>
     )
 }

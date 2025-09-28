@@ -1,13 +1,12 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { FaqContent } from "@/constant";
-import { ArrowRight, ChevronRight, Settings } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 function Faq() {
 
     return (
-    <div className="bg-secondary-foreground text-primary">
+    <div className="text-primary">
       <div className="py-10 lg:py-20 px-8 lg:px-18">
         <div className="flex flex-col">
           <div className="pb-10">
@@ -37,7 +36,7 @@ function Faq() {
             <p className="text-lg lg:text-[1rem]">We're here to answer all your publishing questions.</p>
           </div>
           <div>
-            <Button variant="secondary" className="bg-secondary-foreground">
+            <Button variant="secondary">
               <Link href="/contact">Contact</Link>
             </Button>
           </div>
