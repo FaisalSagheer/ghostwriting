@@ -53,7 +53,7 @@ function Navbar() {
               Logo
             </Link>
           </div>
-          <Button>
+          <Button className="hidden lg:flex">
             <Link href="/contact">
               Menu
             </Link>
@@ -65,7 +65,7 @@ function Navbar() {
           </div>
         </div>
         {MobileDrawerOpen && (
-          <div className="fixed right-0 flex flex-col justify-center items-center lg:hidden w-full p-5 text-center bg-[#f8fafb]">
+          <div className="fixed right-0 flex flex-col justify-center items-center lg:hidden w-full p-5 text-center bg-primary-foreground">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-2">
