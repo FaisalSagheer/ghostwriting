@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="px-4 sm:px-6 lg:px-18 py-16">
+    <footer className="bg-primary-foreground text-white">
+      <div className="px-8 lg:px-18 py-1 lg:py-16">
         {/* Newsletter */}
         <div className="mt-12 pt-8">
-          <div className="flex justify-between flex-col lg:flex-row gap-8 items-center pb-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center pb-20">
             <div>
               <div className="pb-14">
               <Link className="text-2xl" href="/">
@@ -20,7 +20,7 @@ const Footer = () => {
                 Logo
               </Link>
               </div>
-              <ul className="flex space-x-12 -my-8 font-medium items-center">
+              <ul className="flex flex-col lg:flex-row gap-12 -my-8 font-medium lg:items-center">
                 {navItems.map((item, index) => (
                   <li key={index}>
                     <Link
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-y-2 pt-10">
               <h4>Subscribe</h4>
-              <div className="space-x-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-3 lg:space-x-2">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -80,8 +80,8 @@ const Footer = () => {
               Cookie Policy
             </a>
           </div>
-          <p className="text-gray-400 text-sm">
-            © 2025 PlatinumFitness. All rights reserved.
+          <p className="text-gray-400 text-sm pb-6 lg:pb-0">
+            © 2025 Digital Alchemy. All rights reserved.
           </p>
         </div>
       </div>

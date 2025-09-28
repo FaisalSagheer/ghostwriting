@@ -8,8 +8,8 @@ function Testimonials() {
   const cardData = [
     {
       description: `
-      Undiscovered authors with unique ideas 
-      they want to see in print.`,
+      Undiscovered authors with unique ideas they 
+      want to see in print.`,
     },
     {
       description: `
@@ -27,7 +27,7 @@ function Testimonials() {
       <div className="mx-auto max-w-8xl py-10 lg:py-26 px-10 lg:px-0">
         <div className="flex justify-center flex-col items-center">
           <div className="text-center flex flex-col items-center">
-            <h2 className="text-4xl lg:text-7xl lg:w-4xl">
+            <h2 className="text-5xl lg:text-7xl w-sm lg:w-4xl leading-14 lg:leading-20">
               {" "}
               For Aspiring Authors Ready to Share Their Story
             </h2>

@@ -4,14 +4,20 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { navItems } from "@/constant";
 import { Button } from "../ui/button";
-
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 function Navbar() {
   const [MobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!MobileDrawerOpen);
   };
-
   return (
     <nav className="bg-primary-foreground text-primary">
       <div className="mx-auto relative text-sm">
@@ -28,14 +34,30 @@ function Navbar() {
                 </Link>
               </li>
             ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger>Services For Author</DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel><Link href="/publishing">Publishing</Link></DropdownMenuLabel>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger>Services For Business</DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel><Link href="/marketing">Marketing</Link></DropdownMenuLabel>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </ul>
-          <div className="lg:mr-34">
+          <div>
             <Link className="text-2xl" href="/">
               {/* <img src='/' alt="Logo" /> */}
               Logo
             </Link>
           </div>
-          <Button>Menu</Button>
+          <Button>
+            <Link href="/contact">
+              Menu
+            </Link>
+          </Button>
           <div className="lg:hidden md:flex justify-end pr-5 pt-2">
             <button onClick={toggleNavbar} aria-label="Toggle navigation">
               {MobileDrawerOpen ? <X /> : <Menu />}

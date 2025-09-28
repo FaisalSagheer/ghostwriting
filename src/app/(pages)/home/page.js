@@ -5,7 +5,7 @@ import Process from './_components/Process'
 import Testimonials from './_components/Testimonials'
 import Services from './_components/Services'
 import Contact from './_components/Contact'
-import Faq from './_components/Faq'
+import Faq from '../../../components/common/Faq'
 
 function Home() {
   

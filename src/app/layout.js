@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${PromptFont.variable} ${PoetsenOne.variable} antialiased`}
+        className={`text-primary ${PromptFont.variable} ${PoetsenOne.variable} antialiased`}
+      suppressHydrationWarning
       >
         <Navbar/>
         {children}

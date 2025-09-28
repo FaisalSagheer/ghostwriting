@@ -6,11 +6,11 @@ import React from "react";
 function Services() {
   return (
     <div className="bg-background text-primary">
-      <div className="py-10 lg:py-20 px-4 sm:px-6 lg:px-18 text-center lg:text-left">
+      <div className="py-10 lg:py-20 px-8 lg:px-18">
         <div className="text-sm py-3">Welcome</div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0">
           <div>
-            <h2 className="text-4xl lg:text-6xl lg:w-sm leading-16">
+            <h2 className="text-5xl lg:text-6xl w-xs lg:w-sm leading-12 lg:leading-16">
               Write Less, Achieve More with Ghostwriting Services
             </h2>
             <p className="lg:w-lg text-sm md:text-[1rem] py-8">
