@@ -27,17 +27,17 @@ function Navbar() {
     <nav className="bg-primary-foreground text-primary">
       <div className="mx-auto relative text-sm">
         <div className="flex justify-between items-center py-6 px-12">
-            <div>
-              <Link className="text-2xl" href="/">
-                {/* <img src='/' alt="Logo" /> */}
-                Logo
-              </Link>
-            </div>
+          <div>
+            <Link className="text-2xl" href="/">
+              {/* <img src='/' alt="Logo" /> */}
+              Logo
+            </Link>
+          </div>
           <div className="hidden lg:flex justify-center lg:space-x-96 font-medium items-center cursor-pointer">
-            
+
             <div>
               <ul className="flex space-x-12">
-                {navItems.map((item, index) => (
+                {/* {navItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       aria-current="page"
@@ -47,29 +47,66 @@ function Navbar() {
                       {item.title}
                     </Link>
                   </li>
-                ))}
-                <HoverCard>
-                  <HoverCardTrigger>Services For Author</HoverCardTrigger>
-                  <HoverCardContent>
-                    <DropdownMenuLabel>
-                      <Link href="/publishing">Publishing</Link>
-                    </DropdownMenuLabel>
-                    <DropdownMenuLabel>
-                      <Link href="/ghostwriting">GhostWriting</Link>
-                    </DropdownMenuLabel>
-                  </HoverCardContent>
-                </HoverCard>
-                <HoverCard>
-                  <HoverCardTrigger>Services For Business</HoverCardTrigger>
-                  <HoverCardContent>
-                    <DropdownMenuLabel>
-                      <Link href="/marketing">Marketing</Link>
-                    </DropdownMenuLabel>
-                  </HoverCardContent>
-                </HoverCard>
+                ))} */}
+                <li>
+                  <Link href="/about">
+                  About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services">
+                  Services
+                  </Link>
+                </li>
+                <li>
+                  <HoverCard>
+                    <HoverCardTrigger>Services For Author</HoverCardTrigger>
+                    <HoverCardContent>
+                      <DropdownMenuLabel>
+                        <Link href="/publishing">Publishing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/ghostwriting">GhostWriting</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Editing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Cover Design</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/marketing">Marketing</Link>
+                      </DropdownMenuLabel>
+                    </HoverCardContent>
+                  </HoverCard>
+                </li>
+                <li>
+                  <HoverCard>
+                    <HoverCardTrigger>Services For Business</HoverCardTrigger>
+                    <HoverCardContent>
+                      <DropdownMenuLabel>
+                        <Link href="">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Social Media Management & Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Website Design</Link>
+                      </DropdownMenuLabel>
+                    </HoverCardContent>
+                  </HoverCard>
+                </li>
+                <li>
+                  <Link href="/contact">
+                   Contact Us
+                  </Link>
+                </li>
               </ul>
             </div>
-            
+
             <div>
               <Button className="hidden lg:flex">
                 <Link href="/contact">Menu</Link>
@@ -84,15 +121,71 @@ function Navbar() {
           </div>
         </div>
         {MobileDrawerOpen && (
-          <div className="z-100 fixed right-0 flex flex-col justify-center items-center lg:hidden w-full p-5 text-center bg-primary-foreground">
-            <ul>
-              {navItems.map((item, index) => (
+          <div className="fixed right-0 flex flex-col justify-center items-center lg:hidden w-full p-5 text-center bg-primary-foreground text-2xl">
+            <ul className="space-y-6">
+              {/* {navItems.map((item, index) => (
                 <li key={index} className="py-2">
                   <Link aria-current="page" href={item.href}>
                     {item.title}
                   </Link>
                 </li>
-              ))}
+              ))} */}
+              <li>
+                  <Link href="/about">
+                  About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services">
+                  Services
+                  </Link>
+                </li>
+                <li>
+                  <HoverCard>
+                    <HoverCardTrigger>Services For Author</HoverCardTrigger>
+                    <HoverCardContent>
+                      <DropdownMenuLabel>
+                        <Link href="/publishing">Publishing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/ghostwriting">GhostWriting</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Editing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Cover Design</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/marketing">Marketing</Link>
+                      </DropdownMenuLabel>
+                    </HoverCardContent>
+                  </HoverCard>
+                </li>
+                <li>
+                  <HoverCard>
+                    <HoverCardTrigger>Services For Business</HoverCardTrigger>
+                    <HoverCardContent>
+                      <DropdownMenuLabel>
+                        <Link href="">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Social Media Management & Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Website Design</Link>
+                      </DropdownMenuLabel>
+                    </HoverCardContent>
+                  </HoverCard>
+                </li>
+                <li>
+                  <Link href="/contact">
+                   Contact Us
+                  </Link>
+                </li>
             </ul>
           </div>
         )}

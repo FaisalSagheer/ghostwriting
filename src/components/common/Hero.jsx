@@ -17,11 +17,11 @@ function Hero(props) {
         <p className='text-[1rem] py-5 lg:w-lg'>{description} </p>
         <div>
 
-          <Button variant="outline">
+          {/* <Button variant="outline">
             <Link href={href1}>
               {button1}
             </Link>
-          </Button>
+          </Button> */}
           <Button variant="default">
             <Link href={href2}>
               {button2}
