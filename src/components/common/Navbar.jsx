@@ -121,8 +121,8 @@ function Navbar() {
           </div>
         </div>
         {MobileDrawerOpen && (
-          <div className="fixed right-0 flex flex-col justify-center items-center lg:hidden w-full p-5 text-center bg-primary-foreground text-2xl">
-            <ul className="space-y-6">
+          <div className="cursor-pointer z-40 fixed right-0 flex flex-col justify-center items-center lg:hidden w-full h-full p-5 text-center bg-primary-foreground text-4xl">
+            <ul className="space-y-12">
               {/* {navItems.map((item, index) => (
                 <li key={index} className="py-2">
                   <Link aria-current="page" href={item.href}>
@@ -140,7 +140,7 @@ function Navbar() {
                   Services
                   </Link>
                 </li>
-                <li>
+                <li className="z-50">
                   <HoverCard>
                     <HoverCardTrigger>Services For Author</HoverCardTrigger>
                     <HoverCardContent>
