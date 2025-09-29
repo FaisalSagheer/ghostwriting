@@ -12,6 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "../ui/hover-card";
 function Navbar() {
   const [MobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
@@ -22,7 +23,7 @@ function Navbar() {
     <nav className="bg-primary-foreground text-primary">
       <div className="mx-auto relative text-sm">
         <div className="flex justify-between items-center py-6 px-12">
-          <ul className="hidden lg:flex space-x-12 -my-8 font-medium items-center">
+          <ul className="hidden lg:flex space-x-12 -my-8 font-medium items-center cursor-pointer">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
@@ -34,20 +35,20 @@ function Navbar() {
                 </Link>
               </li>
             ))}
-            <DropdownMenu>
-              <DropdownMenuTrigger>Services For Author</DropdownMenuTrigger>
-              <DropdownMenuContent>
+            <HoverCard>
+              <HoverCardTrigger>Services For Author</HoverCardTrigger>
+              <HoverCardContent>
                 <DropdownMenuLabel><Link href="/publishing">Publishing</Link></DropdownMenuLabel>
                 <DropdownMenuLabel><Link href="/ghostwriting">GhostWriting</Link></DropdownMenuLabel>
-              </DropdownMenuContent>
+              </HoverCardContent>
               
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger>Services For Business</DropdownMenuTrigger>
-              <DropdownMenuContent>
+            </HoverCard>
+            <HoverCard>
+              <HoverCardTrigger>Services For Business</HoverCardTrigger>
+              <HoverCardContent>
                 <DropdownMenuLabel><Link href="/marketing">Marketing</Link></DropdownMenuLabel>
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </HoverCardContent>
+            </HoverCard>
           </ul>
           <div>
             <Link className="text-2xl" href="/">
