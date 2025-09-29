@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-black/60">
+      <div className="absolute inset-0 bg-black/60 -z-10">
       <img
-        className="absolute bg-cover bg-center bg-no-repeat lg:h-full h-screen"
+        className="absolute bg-cover bg-center bg-no-repeat w-screen h-screen"
         src="https://images.pexels.com/photos/1541216/pexels-photo-1541216.jpeg?_gl=1*ucvl6c*_ga*MTgxMTY4NjQwNS4xNzU4OTA3MzA3*_ga_8JE65Q40S6*czE3NTg5MDczMDYkbzEkZzEkdDE3NTg5MDc3ODQkajU5JGwwJGgw"
       />
       </div>
