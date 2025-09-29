@@ -11,8 +11,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "../ui/hover-card";
+} from "@/components/ui/dropdown-menu";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "../ui/hover-card";
 function Navbar() {
   const [MobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
@@ -23,44 +27,56 @@ function Navbar() {
     <nav className="bg-primary-foreground text-primary">
       <div className="mx-auto relative text-sm">
         <div className="flex justify-between items-center py-6 px-12">
-          <ul className="hidden lg:flex space-x-12 -my-8 font-medium items-center cursor-pointer">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <Link
-                  aria-current="page"
-                  className="cursor-pointer"
-                  href={item.href}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-            <HoverCard>
-              <HoverCardTrigger>Services For Author</HoverCardTrigger>
-              <HoverCardContent>
-                <DropdownMenuLabel><Link href="/publishing">Publishing</Link></DropdownMenuLabel>
-                <DropdownMenuLabel><Link href="/ghostwriting">GhostWriting</Link></DropdownMenuLabel>
-              </HoverCardContent>
-              
-            </HoverCard>
-            <HoverCard>
-              <HoverCardTrigger>Services For Business</HoverCardTrigger>
-              <HoverCardContent>
-                <DropdownMenuLabel><Link href="/marketing">Marketing</Link></DropdownMenuLabel>
-              </HoverCardContent>
-            </HoverCard>
-          </ul>
-          <div>
-            <Link className="text-2xl" href="/">
-              {/* <img src='/' alt="Logo" /> */}
-              Logo
-            </Link>
+            <div>
+              <Link className="text-2xl" href="/">
+                {/* <img src='/' alt="Logo" /> */}
+                Logo
+              </Link>
+            </div>
+          <div className="hidden lg:flex justify-center lg:space-x-96 font-medium items-center cursor-pointer">
+            
+            <div>
+              <ul className="flex space-x-12">
+                {navItems.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      aria-current="page"
+                      className="cursor-pointer"
+                      href={item.href}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+                <HoverCard>
+                  <HoverCardTrigger>Services For Author</HoverCardTrigger>
+                  <HoverCardContent>
+                    <DropdownMenuLabel>
+                      <Link href="/publishing">Publishing</Link>
+                    </DropdownMenuLabel>
+                    <DropdownMenuLabel>
+                      <Link href="/ghostwriting">GhostWriting</Link>
+                    </DropdownMenuLabel>
+                  </HoverCardContent>
+                </HoverCard>
+                <HoverCard>
+                  <HoverCardTrigger>Services For Business</HoverCardTrigger>
+                  <HoverCardContent>
+                    <DropdownMenuLabel>
+                      <Link href="/marketing">Marketing</Link>
+                    </DropdownMenuLabel>
+                  </HoverCardContent>
+                </HoverCard>
+              </ul>
+            </div>
+            
+            <div>
+              <Button className="hidden lg:flex">
+                <Link href="/contact">Menu</Link>
+              </Button>
+            </div>
           </div>
-          <Button className="hidden lg:flex">
-            <Link href="/contact">
-              Menu
-            </Link>
-          </Button>
+
           <div className="lg:hidden md:flex justify-end pr-5 pt-2">
             <button onClick={toggleNavbar} aria-label="Toggle navigation">
               {MobileDrawerOpen ? <X /> : <Menu />}

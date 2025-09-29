@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="px-8 lg:px-18 py-1 lg:py-16">
         {/* Newsletter */}
         <div className="mt-12 pt-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-center pb-20">
+          <div className="flex flex-col lg:flex-row gap-8 justify-between items-center pb-20">
             <div>
               <div className="pb-14">
               <Link className="text-2xl" href="/">
@@ -44,7 +44,7 @@ const Footer = () => {
                 />
                 <Button
                   variant="secondary"
-                  className="bg-primary-foreground p-6"
+                  className="bg-primary-foreground p-6 lg:w-60 text-center"
                 >
                   Send
                 </Button>
