@@ -63,26 +63,32 @@ export const ChooseUsContent = [
 ]
 export const FaqContent = [
   {
+    value:"item-1",
     title: "What if I've already written most of the book?",
     description: "That's great! We can help you refine your existing work, whether it's through editing, additional writing to complete the narrative, or formatting it for publication."
   },
   {
+    value:"item-2",
     title: "How does the ghostwriting process work?",
     description: "We start with a discovery session to understand your vision, ideas, and goals. From there, we'll outline the book, draft sections, and provide opportunities for your feedback."
   },
   {
+    value:"item-3",
     title: "How long does the writing process take? ",
     description: "The timeline depends on the scope of your project. After our initial consultation, we can provide a more accurate estimate based on your specific needs. Our goal is to deliver quality work within a timeframe that suits you.."
   },
   {
+    value:"item-4",
     title: "What if I don't have a clear idea yet? ",
     description: "No worries! Many of our clients come to us with just a concept or a rough Idea. Our team can help brainstorm and develop your thoughts into a structured outline, turning your vision into a cohesive narrative."
   },
   {
+    value:"item-5",
     title: "What if I need to make changes during the process? ",
     description: "We encourage open communication! If you want to make changes or have new ideas, just let us know. We want to ensure you're completely satisfied with the final product."
   },
   {
+    value:"item-6",
     title: "Do you offer affordable ghostwriting services for new authors? ",
     description: "Of course! We specifically design our packages to be accessible for new and Male authors. Depending on your budget and required level of service, we'll create personalized pricing for you."
   },

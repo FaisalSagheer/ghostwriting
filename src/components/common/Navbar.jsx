@@ -63,22 +63,22 @@ function Navbar() {
                     <HoverCardTrigger>Services For Author</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
-                        <Link href="/publishing">Publishing</Link>
+                        <Link href="">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Consultation</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="">Editing</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
                         <Link href="">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
+                        <Link href="/publishing">Publishing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
                         <Link href="/marketing">Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Editing</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>
@@ -145,22 +145,22 @@ function Navbar() {
                     <HoverCardTrigger>Services For Author</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
-                        <Link href="/publishing">Publishing</Link>
+                        <Link href="">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Consultation</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="">Editing</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
                         <Link href="">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
+                        <Link href="/publishing">Publishing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
                         <Link href="/marketing">Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="">Editing</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>

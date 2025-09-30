@@ -5,7 +5,7 @@ import Footer from "@/components/common/Footer";
 
 const PromptFont = Prompt({
   variable: "--font-prompt-serif",
-  weight:'400',
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`text-primary ${PromptFont.variable} ${PoetsenOne.variable} antialiased`}
-      suppressHydrationWarning
+        suppressHydrationWarning
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
