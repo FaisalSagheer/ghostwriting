@@ -33,7 +33,7 @@ function Navbar() {
               Logo
             </Link>
           </div>
-          <div className="hidden lg:flex justify-center lg:space-x-96 font-medium items-center cursor-pointer">
+          <div className="hidden lg:flex justify-center font-medium items-center cursor-pointer">
 
             <div>
               <ul className="flex space-x-12">
@@ -63,13 +63,13 @@ function Navbar() {
                     <HoverCardTrigger>Services For Author</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
-                        <Link href="">Consultation</Link>
+                        <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Cover Design</Link>
+                        <Link href="#">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/publishing">Publishing</Link>
@@ -78,7 +78,7 @@ function Navbar() {
                         <Link href="/marketing">Marketing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Editing</Link>
+                        <Link href="#">Editing</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>
@@ -88,13 +88,13 @@ function Navbar() {
                     <HoverCardTrigger>Services For Business</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
-                        <Link href="">Consultation</Link>
+                        <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Social Media Management & Marketing</Link>
+                        <Link href="#">Social Media Management & Marketing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Website Design</Link>
+                        <Link href="#">Website Design</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>
@@ -108,9 +108,9 @@ function Navbar() {
             </div>
 
             <div>
-              <Button className="hidden lg:flex">
+              {/* <Button className="hidden lg:flex">
                 <Link href="/contact">Menu</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
 

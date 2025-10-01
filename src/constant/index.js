@@ -43,7 +43,7 @@ export const socialLinks = [
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Youtube, href: '#', label: 'YouTube' }
 ];
-
+// Why Choose Us? Section In
 export const ChooseUsContent = [
   {
     title: "Expert Work Without the Hefty Price Tag",
@@ -94,16 +94,17 @@ export const FaqContent = [
   },
 ]
 
-export const AboutContent = [
+// About Us Page Content
+export const AboutHeroContent = [
   {
     subTitle: "Alchemy",
-    title: "Turn Fleeting Ideas Into Bestsellers with Expert Ghostwriting Services & Publishing Support",
-    description: "From ghostwriting and editing to publishing guidance, USK Publishing helps bring your book to life. Whether you have an idea, a rough draft, or just the desire to publish, we handle every step.",
+    title: "The All-Rounder You Need",
+    description: "Since 2020, Digital Alchemy has been the trusted partner for authors, entrepreneurs, and businesses seeking top-quality solutions with affordable pricing. Consider us as collaborators, problem-solvers, and growth enablers. Our mission is to bridge the gap between ambition and achievement. Whether it’s helping aspiring authors bring their stories to life or guiding businesses in building a stronger digital presence.",
     href1: "/services",
     href2: "/about",
     button1: "Services",
     button2: "About",
-    className: "text-5xl"
+    className: "text-5xl lg:text-7xl"
   }
 ]
 export const about_contact = [

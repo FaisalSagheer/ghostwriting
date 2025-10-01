@@ -1,6 +1,6 @@
 'use client'
 import Hero from '@/components/common/Hero'
-import { AboutContent } from '@/constant'
+import { AboutHeroContent } from '@/constant'
 import React from 'react'
 import Services from './_components/Services'
 import TagLine from './_components/TagLine'
@@ -10,7 +10,7 @@ import Journey from './_components/Journey'
 function About() {
     return (
         <div>
-            {AboutContent.map((item, index) =>
+            {AboutHeroContent.map((item, index) =>
                 <Hero data={item} key={index}/>
             )}
             <Services/>
