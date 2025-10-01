@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Hero from "./_components/Hero";
-import Choose from "./_components/Choose";
+import Choose from "../../../components/common/Choose";
 import Faq from "@/components/common/Faq";
 import GhostWrtitingAndRewriting from "./_components/Services/GhostWrtitingAndRewriting";
 import BookreadingAndProofreading from "./_components/Services/BookeditingAndProofreading";

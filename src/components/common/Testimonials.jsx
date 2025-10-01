@@ -8,7 +8,7 @@ import React from "react";
 function Testimonials() {
  
   return (
-    <div className="bg-background text-primary">
+    <div>
       <div className="mx-auto max-w-8xl py-10 lg:py-26 px-10 lg:px-0">
         <div className="flex justify-center flex-col items-center">
           <div className="text-center flex flex-col items-center">
@@ -38,12 +38,12 @@ function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end mt-8">
+        {/* <div className="flex justify-end mt-8">
           <Button className="text-sm lg:text-lg py-6 -mt-16 capitalize bg-background text-black underline hover:bg-white">
             <Link href="/services">Learn More About our services</Link>
             <ArrowRight />
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

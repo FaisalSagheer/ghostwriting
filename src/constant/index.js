@@ -37,29 +37,38 @@ export const footerLinks = {
   'Support': ['Help Center', 'Membership Portal', 'Schedule', 'Mobile App', 'Community Forum']
 };
 
+
 export const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Instagram, href: '#', label: 'Instagram' },
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Youtube, href: '#', label: 'YouTube' }
 ];
-// Why Choose Us? Section In
+// Why Choose Us? Section In About Us Page
 export const ChooseUsContent = [
   {
-    title: "Expert Work Without the Hefty Price Tag",
-    description: "Receive top-tier, professional publishing services without the premium cost.",
-    preDescription: "We believe every author deserves access to expert guidance and exceptional quality, making your publishing dream both achievable and affordable."
+    title: " Excellence at Every Step",
+    description: " We hold ourselves to the highest standards, delivering professional-grade solutions that balance creativity with strategy.",
+    // preDescription: "We believe every author deserves access to expert guidance and exceptional quality, making your publishing dream both achievable and affordable."
   },
   {
-    title: "A Team of Passionate Genre Specialists",
-    description: "Your book isn't just another project. Our team is comprised of editors, designers, and marketers who are genuine enthusiasts of your genre.",
-    preDescription: "They bring their passion and deep market knowledge to ensure your book resonates with its intended audience."
+    title: "Tailored to Your Vision",
+    description: "No two clients are the same. That’s why we design personalized strategies that align with your goals, voice, and brand identity.",
+    // preDescription: "They bring their passion and deep market knowledge to ensure your book resonates with its intended audience."
   },
   {
-    title: "Tailored Guidance Every Step of the Way",
-    description: "We work alongside you, not just for you. From the first draft to the final proof, we provide continuous support, feedback, and polishing to refine your manuscript and strategy.",
-    preDescription: "Our goal is to deliver a final product that you're truly proud of."
+    title: "Affordability Without Sacrifice",
+    description: "We believe great services should be accessible. Our pricing is transparent and fair, ensuring you get exceptional value without compromise.",
+    // preDescription: "Our goal is to deliver a final product that you're truly proud of."
   },
+  {
+    title:"Proven Track Record",
+    description:"Since 2020, we’ve guided aspiring authors, small businesses, and established brands toward measurable success and lasting growth."
+  },
+  {
+    title:"A Partner You Can Trust",
+    description:"Your success is our success, and we stand by you every step of the way."
+  }
 ]
 export const FaqContent = [
   {

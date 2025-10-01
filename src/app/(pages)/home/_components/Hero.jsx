@@ -3,6 +3,7 @@
 import React from "react";
 import { Play, Star, Users, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -40,7 +41,9 @@ const Hero = () => {
                 Start
               </Button> */}
               <Button className="flex items-center justify-center bg-primary/10 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
-                Learn
+                <Link href="/contact">
+                Contact Us
+                </Link>
               </Button>
             </div>
           </div>

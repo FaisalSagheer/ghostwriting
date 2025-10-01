@@ -73,12 +73,12 @@ const Footer = () => {
             >
               Terms of Service
             </a>
-            <a
+            {/* <a
               href="#"
               className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
             >
               Cookie Policy
-            </a>
+            </a> */}
           </div>
           <p className="text-gray-400 text-sm pb-6 lg:pb-0">
             © 2025 Digital Alchemy. All rights reserved.
