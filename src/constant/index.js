@@ -1,10 +1,10 @@
 import { Globe, CircleDollarSign, DollarSignIcon, Image, Pencil, ShieldCheckGlobe, Target, Heart, Award, Zap, Facebook, Instagram, Twitter, Youtube, Dumbbell, Users, Clock, Star, Crown, Mail, Phone, MapPin, Pause, Play, PlayCircle, AppWindow, MessagesSquare, ShieldCheck, Album, Briefcase, Box } from 'lucide-react';
 
 export const navItems = [
-  {
-    title: "Services",
-    href: "/services",
-  },
+  // {
+  //   title: "Services",
+  //   href: "/services",
+  // },
   {
     title: "About",
     href: "/about"

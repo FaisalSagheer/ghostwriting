@@ -53,11 +53,11 @@ function Navbar() {
                   About Us
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/services">
                   Services
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <HoverCard>
                     <HoverCardTrigger>Services For Author</HoverCardTrigger>
