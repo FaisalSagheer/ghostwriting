@@ -6,10 +6,10 @@ import React from 'react'
 function ContactForm() {
     return (
         <section className="bg-secondary-foreground">
-            <div className="mx-auto flex justify-between flex-wrap lg:flex-nowrap px-4 sm:px-6 lg:px-8 py-14">
-                <div className="space-y-4 mb-16">
+            <div className="mx-auto flex justify-between flex-wrap lg:flex-nowrap px-6 lg:px-16 py-14">
+                <div className="lg:space-y-4 mt-12">
                     <h4>Connect</h4>
-                    <h2 className="text-6xl font-bold pb-4">Get In Touch</h2>
+                    <h2 className="text-6xl font-bold pb-4 pt-2 lg:pt-0">Get In Touch</h2>
                     <p className="text-xl max-w-3xl mx-auto pb-4">
                         Let's collaborate to bring your vision to life.
                     </p>
@@ -39,7 +39,7 @@ function ContactForm() {
 
                 <div>
                     {/* Contact Form */}
-                    <div className="p-8">
+                    <div className="px-2 lg:px-0 py-8 lg:py-0">
                         {/* <h3 className="text-2xl font-semibold mb-6 text-primary">Send a Message</h3> */}
                         <form className="space-y-6">
                             <div className="grid grid-cols-2 gap-6">
