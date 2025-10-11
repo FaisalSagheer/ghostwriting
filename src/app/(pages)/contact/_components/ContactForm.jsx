@@ -125,7 +125,7 @@ function ContactForm() {
                             </div>
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-primary mb-2 pt-2">
+                                <label className="block text-sm font-medium text-primary mb-3 pt-2">
                                     Message
                                 </label>
                                 <textarea
@@ -138,7 +138,7 @@ function ContactForm() {
                             <Button
                                 variant="outline"
                                 type="submit"
-                                className="hover:bg-primary hover:text-secondary-foreground w-full bg-secondary-foreground text-white font-semibold py-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
+                                className="border hover:bg-primary hover:text-secondary-foreground w-full bg-secondary-foreground text-white font-semibold py-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
                             >
                                 <Mail className="h-5 w-5" />
                                 <span>Send Message</span>
