@@ -12,37 +12,37 @@ import React from "react";
 function Process() {
   const data = [
     {
-      icon:<ScrollText size={80} />,
+      icon:<ScrollText size={70} />,
       title: "Project Brief",
       description: `
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
     },
     {
-      icon:<FileSearch size={80} />,
+      icon:<FileSearch size={70} />,
       title: "Research",
       description: `
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
     },
     {
-      icon:<FilePen size={80} />,
+      icon:<FilePen size={70} />,
       title: "Producing Content",
       description: `
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
     },
     {
-      icon:<SpellCheck size={80} />,
+      icon:<SpellCheck size={70} />,
       title: "Editing & Proofreading",
       description: `
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
     },
     {
-      icon:<Brush size={80} />,
+      icon:<Brush size={70} />,
       title: "Designing",
       description: `
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
     },
     {
-      icon:<WifiPen size={80} />,
+      icon:<WifiPen size={70} />,
       title: "Book publishing, Branding & Marketing",
       description: `
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,

@@ -4,7 +4,7 @@ import React from "react";
 
 function Works() {
   return (
-    <div className="bg-secondary-foreground py-14">
+    <div className="bg-foreground py-14">
       <div className="flex justify-center flex-col items-center">
          <div className="text-center flex flex-col items-center">
             <h3 className="uppercase">What We've done so far</h3>
@@ -17,7 +17,7 @@ function Works() {
             professional book ghostwriting services.
           </p> */}
       </div>
-      <div style={{ height: "600px", position: "relative" }} className="my-10">
+      <div style={{ height: "600px", position: "relative" }} className="-mt-10 mb-10">
         <CircularGallery
           bend={3}
           textColor="#ffffff"

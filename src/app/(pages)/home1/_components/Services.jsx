@@ -39,7 +39,7 @@ function Services() {
             <h2 className="text-5xl lg:text-6xl leading-14 lg:leading-18 w-sm lg:w-xl">
               Professional Ghostwriters are here to help you!{" "}
             </h2>
-            <p className="w-sm lg:w-lg text-sm md:text-lg font-normal py-8 leading-6">
+            <p className="w-sm lg:w-lg font-normal py-8 leading-6">
               When you team up with us, you're not just hiring a book publishing
               company: you're getting personalized assistance at every step. We
               take care of the nitty-gritty of writing and publishing, so you
@@ -54,7 +54,7 @@ function Services() {
                 ))}
               </ul>
             </div>
-            <div className="mt-10">
+            <div className="mt-6 lg:mt-10">
               <Button className="uppercase" variant="outline">
                 Looking For a GhostWriter
               </Button>
