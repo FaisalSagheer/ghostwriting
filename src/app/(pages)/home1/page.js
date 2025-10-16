@@ -6,17 +6,19 @@ import Testimonials from '../../../components/common/Testimonials'
 import Services from './_components/Services'
 import Contact from './_components/Contact'
 import Faq from '../../../components/common/Faq'
+import Works from './_components/Works'
 
 function Home() {
   
   return (
     <div>
       <Hero/>
-      <Testimonials/>
-      <Process/>
       <Services/>
+      {/* <Testimonials/> */}
+      <Process/>
+      <Works/>
       <div className='bg-secondary-foreground'>
-      <Faq/>
+      {/* <Faq/> */}
       </div>
       <Contact/>
     </div>

@@ -6,7 +6,7 @@ import { Popover } from "@/components/ui/popover";
 
 const PromptFont = Prompt({
   variable: "--font-prompt-serif",
-  weight: "400",
+  weight: ["100","200","300","400"],
   subsets: ["latin"],
 });
 
