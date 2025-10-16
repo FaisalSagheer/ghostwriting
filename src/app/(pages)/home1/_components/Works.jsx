@@ -17,7 +17,7 @@ function Works() {
             professional book ghostwriting services.
           </p> */}
       </div>
-      <div style={{ height: "600px", position: "relative" }} className="-mt-10 mb-10">
+      <div style={{ height: "600px", position: "relative" }} className="-mt-10 lg:mb-10">
         <CircularGallery
           bend={3}
           textColor="#ffffff"

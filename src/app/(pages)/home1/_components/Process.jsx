@@ -50,7 +50,7 @@ function Process() {
   ];
   return (
     <div>
-      <div className="mx-auto max-w-8xl py-10 lg:py-26 px-10 lg:px-0">
+      <div className="mx-auto max-w-7xl py-10 lg:py-26 px-10 lg:px-0">
         <div className="flex justify-center flex-col items-center">
           <div className="text-center flex flex-col items-center">
             <h3 className="">Our Amazing Ghostwriting Process</h3>

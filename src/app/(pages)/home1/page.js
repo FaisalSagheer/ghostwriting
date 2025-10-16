@@ -14,13 +14,13 @@ function Home() {
     <div>
       <Hero/>
       <Services/>
-      {/* <Testimonials/> */}
       <Process/>
       <Works/>
+      <Testimonials/>
       <div className='bg-secondary-foreground'>
-      {/* <Faq/> */}
+      <Faq/>
       </div>
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   )
 }
