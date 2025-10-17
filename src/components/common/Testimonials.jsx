@@ -8,7 +8,7 @@ import React from "react";
 function Testimonials() {
   return (
     <div>
-      <div className="mx-auto max-w-8xl py-10 lg:py-26 px-10 lg:px-0">
+      <div className="mx-auto max-w-min py-10 lg:py-26 px-10 lg:px-0">
         <div className="flex justify-center flex-col items-center">
           <div className="text-center flex flex-col items-center">
             <h2 className="text-5xl lg:text-7xl w-sm lg:w-4xl leading-14 lg:leading-20">
@@ -17,7 +17,7 @@ function Testimonials() {
             <p className="text-sm md:text-lg pt-4 lg:w-lg"></p>
           </div>
           <div>
-            <div className="flex flex-wrap lg:flex-nowrap py-12 gap-4">
+            <div className="flex flex-wrap lg:flex-nowrap py-12 gap-6 lg:gap-4">
               {Testimonial.map((item, index) => (
                 <div
                   className="mx-2 border-2 border-white/20 rounded-2xl py-4 px-6"

@@ -17,19 +17,20 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import Form from "./Form";
 function Faq() {
   return (
     <div className="text-primary">
-      <div className="py-10 lg:py-20 px-12 lg:px-16 max-w-7xl mx-auto">
-        <div >
-          <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-between lg:space-x-10">
-            <div className="space-y-4">
-          <div className="">
-            <h2 className="text-4xl lg:text-6xl">Faqs</h2>
-            <p className="text-lg md:text-[1rem] py-6">
+      <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-min mx-auto">
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-6xl">Faqs</h2>
+            <p className="text-lg md:text-[1rem] py-6 text-center">
               Common questions about our book publishing services
             </p>
           </div>
+        <div >
+          <div className="flex flex-wrap lg:flex-nowrap lg:gap-26 items-center pt-10">
+            <div className="space-y-6">
               {FaqContent.map((item, index) => (
                 <div key={index}>
                   <Accordion
@@ -39,19 +40,19 @@ function Faq() {
                     // defaultValue="item-1"
                   >
                     <AccordionItem value={item.value}>
-                      <AccordionTrigger>
-                        <h4 className="font-semibold text-xl">{item.title}</h4>
+                      <AccordionTrigger className="">
+                        <h4 className="font-semibold text-sm lg:text-xl">{item.title}</h4>
                       </AccordionTrigger>
                       <AccordionContent className="leading-6.5 w-xl">
-                        <p className="text-[1rem]">{item.description}</p>
+                        <p className="text-sm lg:text-[1rem]">{item.description}</p>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
               ))}
             </div>
-            <div className="lg:ml-10 pt-20 lg:pt-0 mt-30">
-              <img src="assets/faq.jpg" alt="/" className="rounded h-[25rem] w-full"/>
+            <div className="border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:mr-38 lg:my-0">
+            <Form/>
             </div>
           </div>
         </div>

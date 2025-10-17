@@ -34,7 +34,7 @@ function Services() {
     <div className="bg-foreground text-primary">
       <div className="py-10 lg:py-20 px-8 lg:px-14 max-w-7xl mx-auto">
         {/* <div className="text-sm py-3">Welcome</div> */}
-        <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0">
+        <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
           <div>
             <h2 className="text-5xl lg:text-6xl leading-14 lg:leading-18 w-sm lg:w-xl">
               Professional Ghostwriters are here to help you!{" "}

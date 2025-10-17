@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 px-6 lg:px-12 py-14 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-18 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-38 items-center">
           <div>
             <p className="text-lg">It's time you share your Amazing Story!</p>
             <h1 className="text-5xl font-bold text-primary mb-6 leading-tight">
@@ -52,7 +52,7 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="lg:w-lg bg-foreground py-8 px-5 rounded-2xl">
+          <div className="lg:w-lg bg-foreground py-8 px-5 rounded-2xl mt-10 lg:mt-0">
             <Form />
           </div>
         </div>

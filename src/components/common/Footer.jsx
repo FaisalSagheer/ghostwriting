@@ -8,19 +8,25 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-foreground text-white">
-      <div className="px-8 lg:px-16 py-1 lg:py-16 max-w-7xl mx-auto">
+    <footer className="bg-primary-foreground text-primary">
+      <div className="px-8 lg:px-8 py-1 lg:py-16 max-w-7xl mx-auto">
         {/* Newsletter */}
         <div className="mt-12 pt-8">
-          <div className="flex flex-col lg:flex-row gap-8 justify-between items-center pb-20">
-            <div>
-              <div className="pb-14">
-              <Link className="text-2xl" href="/">
-                {/* <img src='/' alt="Logo" /> */}
-                Logo
-              </Link>
+          <div className="flex flex-col lg:flex-row justify-between items-center pb-20">
+            <div className="lg:-ml-28">
+              <div className="pb-6">
+                <Link className="text-2xl" href="/">
+                  {/* <img src='/' alt="Logo" /> */}
+                  Logo
+                </Link>
               </div>
-              <ul className="flex flex-col lg:flex-row gap-12 -my-8 font-medium lg:items-center">
+              <p className="w-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                odit ducimus quaerat quas cum maxime modi natus quia distinctio
+                totam, at sed dignissimos voluptatibus doloribus recusandae,
+                quisquam perferendis consectetur autem ab quis sint expedita!
+              </p>
+              {/* <ul className="flex flex-col lg:flex-row gap-12 -my-8 font-medium lg:items-center">
                 {navItems.map((item, index) => (
                   <li key={index}>
                     <Link
@@ -32,9 +38,44 @@ const Footer = () => {
                     </Link>
                   </li>
                 ))}
+              </ul> */}
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
+            <div className="space-y-4">
+              <h4 className="text-lg">Services for Author</h4>
+              <ul className="space-y-2 text-sm">
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
               </ul>
             </div>
-            <div className="flex flex-col gap-y-2 pt-10">
+            <div className="space-y-3">
+              <h4>Services for Author</h4>
+              <ul className="space-y-2 text-sm">
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <h4>Services for Author</h4>
+              <ul className="space-y-2 text-sm">
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+                <li>Consultation</li>
+              </ul>
+            </div>
+            </div>
+            {/* <div className="flex flex-col gap-y-2 pt-10">
               <h4>Subscribe</h4>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-3 lg:space-x-2">
                 <input
@@ -54,12 +95,12 @@ const Footer = () => {
                   By Subscribing you agree to our privacy policy
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 lg:space-y-0">
+        {/* <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <div className="flex space-x-6 mt-4 md:mt-0 underline">
             <a
               href="#"
@@ -73,17 +114,11 @@ const Footer = () => {
             >
               Terms of Service
             </a>
-            {/* <a
-              href="#"
-              className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
-            >
-              Cookie Policy
-            </a> */}
           </div>
           <p className="text-gray-400 text-sm pb-6 lg:pb-0">
             © 2025 Digital Alchemy. All rights reserved.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
