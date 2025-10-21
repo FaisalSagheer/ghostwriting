@@ -24,7 +24,7 @@ function Navbar() {
     setMobileDrawerOpen(!MobileDrawerOpen);
   };
   return (
-    <nav className="bg-foreground text-primary">
+    <nav className="bg-accent text-background">
       <div className="mx-auto relative text-sm max-w-7xl">
         <div className="flex justify-between items-center py-6 px-12">
           <div>
@@ -121,7 +121,7 @@ function Navbar() {
           </div>
         </div>
         {MobileDrawerOpen && (
-          <div className="cursor-pointer z-40 fixed right-0 flex flex-col justify-center items-center lg:hidden w-full h-full p-5 text-center bg-primary-foreground text-4xl">
+          <div className="cursor-pointer z-40 fixed right-0 flex flex-col justify-center items-center lg:hidden w-full h-full p-5 text-center bg-secondary text-4xl text-background">
             <ul className="space-y-12">
               {/* {navItems.map((item, index) => (
                 <li key={index} className="py-2">

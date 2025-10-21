@@ -31,7 +31,7 @@ function Services() {
     },
   ];
   return (
-    <div className="bg-foreground text-primary">
+    <div className="bg-accent text-secondary-foreground">
       <div className="py-10 lg:py-20 px-8 lg:px-14 max-w-7xl mx-auto">
         {/* <div className="text-sm py-3">Welcome</div> */}
         <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
@@ -39,7 +39,7 @@ function Services() {
             <h2 className="text-5xl lg:text-6xl leading-14 lg:leading-18 w-sm lg:w-xl">
               Professional Ghostwriters are here to help you!{" "}
             </h2>
-            <p className="w-sm lg:w-lg font-normal py-8 leading-6">
+            <p className="w-sm lg:w-lg font-normal py-8 leading-6 text-secondary-foreground/60">
               When you team up with us, you're not just hiring a book publishing
               company: you're getting personalized assistance at every step. We
               take care of the nitty-gritty of writing and publishing, so you

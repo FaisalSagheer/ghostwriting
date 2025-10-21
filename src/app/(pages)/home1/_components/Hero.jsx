@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 bg-black/60">
         <img
-          className="absolute bg-cover bg-center bg-no-repeat w-screen h-dvh md:h-screen lg:h-full xl:min-h-full"
+          className="absolute bg-cover bg-center bg-no-repeat w-screen h-dvh md:h-screen lg:h-full"
           src="https://images.pexels.com/photos/1541216/pexels-photo-1541216.jpeg?_gl=1*ucvl6c*_ga*MTgxMTY4NjQwNS4xNzU4OTA3MzA3*_ga_8JE65Q40S6*czE3NTg5MDczMDYkbzEkZzEkdDE3NTg5MDc3ODQkajU5JGwwJGgw"
         />
       </div>
