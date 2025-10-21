@@ -7,20 +7,21 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 
 const Footer = () => {
+  const anima = `hover:text-white transition-colors duration-300`
   return (
     <footer className="bg-primary-foreground text-primary">
-      <div className="px-8 lg:px-8 py-1 lg:py-16 max-w-7xl mx-auto">
-        {/* Newsletter */}
+      <div className="px-8 lg:px-14 py-4 lg:pt-4 max-w-7xl mx-auto">
         <div className="mt-12 pt-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center pb-20">
-            <div className="lg:-ml-28">
-              <div className="pb-6">
-                <Link className="text-2xl" href="/">
+          <div className="flex flex-col lg:flex-row lg:gap-x-24">
+            {/* Logo */}
+            <div className="space-y-3">
+              <div>
+                <Link className="text-xl" href="/">
                   {/* <img src='/' alt="Logo" /> */}
                   Logo
                 </Link>
               </div>
-              <p className="w-sm">
+              <p className="w-sm text-sm text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
                 odit ducimus quaerat quas cum maxime modi natus quia distinctio
                 totam, at sed dignissimos voluptatibus doloribus recusandae,
@@ -40,40 +41,42 @@ const Footer = () => {
                 ))}
               </ul> */}
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
-            <div className="space-y-4">
-              <h4 className="text-lg">Services for Author</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-              </ul>
-            </div>
-            <div className="space-y-3">
-              <h4>Services for Author</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-              </ul>
-            </div>
-            <div className="space-y-3">
-              <h4>Services for Author</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-                <li>Consultation</li>
-              </ul>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 space-x-12 space-y-12 pt-10 lg:pt-0">
+              <div className="space-y-4">
+                <h4 className="text-sm">Quick Links</h4>
+                <ul className="space-y-2 text-gray-400 text-sm">
+                  <li className="hover:text-white transition-colors duration-300">Home</li>
+                  <li className="hover:text-white transition-colors duration-300">About</li>
+                  <li className="hover:text-white transition-colors duration-300">Contact</li>
+                </ul>
+              </div>
+              <div className="space-y-4">
+                <h4 className="text-sm">Services for Author</h4>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className={anima}>Consultation</li>
+                  <li className={anima}>Ghostwriting</li>
+                  <li className={anima}>Cover Design</li>
+                  <li className={anima}>Publishing</li>
+                  <li className={anima}>Marketing</li>
+                  <li className={anima}>Editing</li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-sm">Services for Author</h4>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className={anima}>Consultation</li>
+                  <li className={anima}>Social Media Management & Marketing</li>
+                  <li className={anima}>Website Desisgn</li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-sm">Contact Us</h4>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className={anima}>info@Alchemy.com</li>
+                  <li className={anima}>Wall Street,New York</li>
+                  <li className={anima}>123456789</li>
+                </ul>
+              </div>
             </div>
             {/* <div className="flex flex-col gap-y-2 pt-10">
               <h4>Subscribe</h4>
@@ -100,7 +103,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        {/* <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 lg:space-y-0">
+        <div className="border-t border-gray-800 pt-8 pb-4 flex flex-col md:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <div className="flex space-x-6 mt-4 md:mt-0 underline">
             <a
               href="#"
@@ -118,7 +121,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm pb-6 lg:pb-0">
             © 2025 Digital Alchemy. All rights reserved.
           </p>
-        </div> */}
+        </div>
       </div>
     </footer>
   );
