@@ -16,7 +16,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="space-y-3">
               <div>
-                <Link className="text-xl" href="/">
+                <Link className="text-2xl" href="/">
                   {/* <img src='/' alt="Logo" /> */}
                   Logo
                 </Link>
@@ -45,9 +45,9 @@ const Footer = () => {
               <div className="space-y-4">
                 <h4 className="text-sm">Quick Links</h4>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li className="hover:text-white transition-colors duration-300">Home</li>
-                  <li className="hover:text-white transition-colors duration-300">About</li>
-                  <li className="hover:text-white transition-colors duration-300">Contact</li>
+                  <li className={anima}>Home</li>
+                  <li className={anima}>About Us</li>
+                  <li className={anima}>Contact Us</li>
                 </ul>
               </div>
               <div className="space-y-4">
@@ -70,7 +70,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="space-y-3">
-                <h4 className="text-sm">Contact Us</h4>
+                <h4 className="text-sm">Contact</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li className={anima}>info@Alchemy.com</li>
                   <li className={anima}>Wall Street,New York</li>

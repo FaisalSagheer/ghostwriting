@@ -24,7 +24,7 @@ function Navbar() {
     setMobileDrawerOpen(!MobileDrawerOpen);
   };
   return (
-    <nav className="bg-primary-foreground text-primary">
+    <nav className="bg-foreground text-primary">
       <div className="mx-auto relative text-sm max-w-7xl">
         <div className="flex justify-between items-center py-6 px-12">
           <div>

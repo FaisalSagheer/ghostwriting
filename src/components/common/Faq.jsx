@@ -21,7 +21,7 @@ import Form from "./Form";
 function Faq() {
   return (
     <div className="text-primary">
-      <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-min mx-auto">
+      <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-7xl mx-auto">
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-6xl">Faqs</h2>
             <p className="text-lg md:text-[1rem] py-6 text-center">
@@ -41,17 +41,17 @@ function Faq() {
                   >
                     <AccordionItem value={item.value}>
                       <AccordionTrigger className="">
-                        <h4 className="font-semibold text-sm lg:text-xl">{item.title}</h4>
+                        <h4 className="font-semibold lg:text-lg">{item.title}</h4>
                       </AccordionTrigger>
                       <AccordionContent className="leading-6.5 w-xl">
-                        <p className="text-sm lg:text-[1rem]">{item.description}</p>
+                        <p className="text-sm">{item.description}</p>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
               ))}
             </div>
-            <div className="border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:mr-38 lg:my-0">
+            <div className="border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:my-0">
             <Form/>
             </div>
           </div>
