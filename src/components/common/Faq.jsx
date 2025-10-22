@@ -20,7 +20,7 @@ import {
 import Form from "./Form";
 function Faq() {
   return (
-    <div className="text-primary">
+    <div>
       <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-7xl mx-auto">
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-6xl">Faqs</h2>
@@ -44,14 +44,14 @@ function Faq() {
                         <h4 className="font-semibold lg:text-lg">{item.title}</h4>
                       </AccordionTrigger>
                       <AccordionContent className="leading-6.5 w-xl">
-                        <p className="text-sm">{item.description}</p>
+                        <p className="text-sm text-secondary-foreground">{item.description}</p>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
               ))}
             </div>
-            <div className="border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:my-0">
+            <div className="border-secondary-foreground text-background border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:my-0">
             <Form/>
             </div>
           </div>

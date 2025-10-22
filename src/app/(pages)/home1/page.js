@@ -18,7 +18,7 @@ function Home() {
         <Process />
         <Works />
         <Testimonials />
-        <div className="bg-foreground">
+        <div className="bg-primary text-secondary-foreground">
           <Faq />
         </div>
         {/* <Contact/> */}

@@ -8,8 +8,8 @@ import React from "react";
 function Testimonials() {
   return (
     <div>
-      <div className="mx-auto max-w-min py-10 lg:py-26 px-10 lg:px-0">
-        <div className="flex justify-center flex-col items-center">
+      <div className="bg-foreground py-10 lg:py-26 px-10 lg:px-0">
+        <div className="mx-auto max-w-min flex justify-center flex-col items-center">
           <div className="text-center flex flex-col items-center">
             <h2 className="text-5xl lg:text-7xl w-sm lg:w-4xl leading-14 lg:leading-20">
               Testimonials
