@@ -7,6 +7,7 @@ const Form = () => {
   return (
     <>
       <form className="space-y-6">
+        <h2 className="text-2xl">Get 30% off by signing up now!</h2>
         <div className="gap-6">
           <div>
             <label className="block text-sm font-medium mb-2">

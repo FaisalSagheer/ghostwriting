@@ -128,39 +128,58 @@ export const ChooseUsContent = [
 export const FaqContent = [
   {
     value: "item-1",
-    title: "What if I've already written most of the book?",
+    title: "What if I’m not sure what service I need?*",
     description:
-      "That's great! We can help you refine your existing work, whether it's through editing, additional writing to complete the narrative, or formatting it for publication.",
+      "Not a problem! Our specialists can assist you in structuring everything through our consultation call. Here, at Digital Alchemy, we aim to assist you every step of the way."
   },
   {
     value: "item-2",
-    title: "How does the ghostwriting process work?",
+    title: "Can you help me develop an idea into a full business plan?",
     description:
-      "We start with a discovery session to understand your vision, ideas, and goals. From there, we'll outline the book, draft sections, and provide opportunities for your feedback.",
+      "100!We specialize in turning ideas into actionable, investor-ready business plans with market analysis, financial projections, and branding direction."
   },
   {
     value: "item-3",
-    title: "How long does the writing process take? ",
+    title: "Do you sign NDAs?",
     description:
-      "The timeline depends on the scope of your project. After our initial consultation, we can provide a more accurate estimate based on your specific needs. Our goal is to deliver quality work within a timeframe that suits you..",
+      "Absolutely. Confidentiality is a core part of our process. Every client project remains private unless you authorize us to showcase it."
   },
   {
     value: "item-4",
-    title: "What if I don't have a clear idea yet? ",
+    title: "How do we get started?",
     description:
-      "No worries! Many of our clients come to us with just a concept or a rough Idea. Our team can help brainstorm and develop your thoughts into a structured outline, turning your vision into a cohesive narrative.",
+      "Simply fill out our contact form or book a free consultation call. We’ll discuss your needs and provide a tailored proposal or quote within 48 hours."
   },
   {
     value: "item-5",
-    title: "What if I need to make changes during the process? ",
+    title: "Do you offer revisions?",
     description:
-      "We encourage open communication! If you want to make changes or have new ideas, just let us know. We want to ensure you're completely satisfied with the final product.",
+      "Yes. Each package includes a set number of revision rounds to ensure your satisfaction. Additional edits can be arranged if needed."
   },
   {
     value: "item-6",
-    title: "Do you offer affordable ghostwriting services for new authors? ",
+    title: "What’s your process like?",
     description:
-      "Of course! We specifically design our packages to be accessible for new and Male authors. Depending on your budget and required level of service, we'll create personalized pricing for you.",
+      `Our standard process includes:
+
+1. Consultation Call: Understanding your goals and challenges.
+2.  Strategy Phase: Research, ideation, and planning.
+3. Creation & Execution: Delivering creative or business solutions.
+4. Revision & Delivery: Final adjustments and handover.
+5. Ongoing Support (optional): Continued optimization and guidance.
+`
+  },
+  {
+    value: "item-7",
+    title: "Do you work with international clients?",
+    description:
+  "Yes,  we work globally. We have an in-house and virtual team that is allotted to you, depending upon your needs and services."
+  },
+  {
+    value: "item-8",
+    title: "Do I have to pay up front?",
+    description:
+  "Yes. Your designated team of experts is paid per project, but we do offer payment plans that break down your services into milestones, providing you with everything you need without affecting quality."
   },
 ];
 
@@ -497,13 +516,13 @@ export const GhostWritingContact = [
 export const ContactHero = [
   {
     subTitle: "Connect",
-    title: "Get In Touch",
+    title: "Get Free Consultation",
     description:
       "Transform your book idea into a published masterpiece with our expert publishing support.",
     href1: "",
     href2: "",
     button1: "Start",
     button2: "Learn",
-    className: "text-6xl lg:text-7xl pt-4",
+    className: "text-6xl",
   },
 ];

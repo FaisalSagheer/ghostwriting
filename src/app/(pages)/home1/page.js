@@ -8,15 +8,17 @@ import Contact from "./_components/Contact";
 import Faq from "../../../components/common/Faq";
 import Works from "./_components/Works";
 import ReactLenis from "@studio-freight/react-lenis";
+import TernarySection from "./_components/TernarySection";
 
 function Home() {
   return (
     <div>
       <ReactLenis root>
+        <TernarySection />
         <Hero />
-        <Services />
-        <Process />
         <Works />
+        <Services />
+        {/* <Process /> */}
         <Testimonials />
         <div className="bg-primary text-secondary-foreground">
           <Faq />

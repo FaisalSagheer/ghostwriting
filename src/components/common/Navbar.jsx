@@ -1,16 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import { navItems } from "@/constant";
-import { Button } from "../ui/button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
   HoverCard,
@@ -60,13 +53,16 @@ function Navbar() {
                 </li> */}
                 <li>
                   <HoverCard>
-                    <HoverCardTrigger>Services For Author</HoverCardTrigger>
+                    <HoverCardTrigger>Services For Authors</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/ghostwriting">GhostWriting</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="#">Editing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="#">Cover Design</Link>
@@ -77,15 +73,12 @@ function Navbar() {
                       <DropdownMenuLabel>
                         <Link href="/marketing">Marketing</Link>
                       </DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="#">Editing</Link>
-                      </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>
                 </li>
                 <li>
                   <HoverCard>
-                    <HoverCardTrigger>Services For Business</HoverCardTrigger>
+                    <HoverCardTrigger>Services For Businesses</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
@@ -151,16 +144,16 @@ function Navbar() {
                         <Link href="/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="">Cover Design</Link>
+                      <DropdownMenuLabel>
+                        <Link href="#">Editing</Link>
+                      </DropdownMenuLabel>
+                        <Link href="#">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/publishing">Publishing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/marketing">Marketing</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="">Editing</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>

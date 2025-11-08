@@ -1,5 +1,7 @@
 'use client'
 import React from 'react'
+import Logo from "@/../public/assets/logo.png"
+import Image from 'next/image'
 
 function Benefits() {
     const BeneFitsContent = [
@@ -24,23 +26,26 @@ function Benefits() {
     ]
     return (
         <div>
-            <div className='bg-background'>
-                <div className='text-primary flex flex-col items-center px-10 lg:px-24 py-10 lg:py-20'>
+            <div className='bg-primary text-background'>
+                <div className='flex flex-col items-center px-10 lg:px-24 py-10 lg:py-20'>
                     <div className='text-center'>
                         <h4>
                             Benefits
                         </h4>
                         <h1 className='text-7xl leading-18 lg:leading-20 lg:w-xl pt-2'>
-                            End-to-End Writing,{" "}
+                            From Start To{" "}
                             <span>
-                                Publishing,
+                                Finish,
                             </span>{" "}
-                            and Book Marketing Services
+                            We’ve Got You Covered!
                         </h1>
-                        <p className='text-[1rem] py-5'>Transforming your writing journey with expertise and personalized support. </p>
+                        <div className="flex justify-center items-center -my-22">
+                            <Image src={Logo} className="lg:h-[65vh] lg:w-[35vw]" alt="Logo" />
+                        </div>
+                        <p className='text-[1rem] capitalize'>Talk to an expert now and take the first step to towards serenity!</p>
                     </div>
 
-                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 pt-20'>
+                    {/* <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 pt-20'>
                         {BeneFitsContent.map((item, index) =>
                             <div key={index} className='my-auto border rounded-2xl border-white/30 mt-0'>
                                 <div className='p-8 space-y-6'>
@@ -56,7 +61,7 @@ function Benefits() {
                         )}
 
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

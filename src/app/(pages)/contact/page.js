@@ -7,15 +7,20 @@ import ContactForm from './_components/ContactForm'
 import Faq from '@/components/common/Faq'
 import Details from './_components/Details'
 import Locations from './_components/Locations'
+import ReactLenis from '@studio-freight/react-lenis'
 
 function Contact() {
     return (
         <div>
-            <HeroSection />
-            <ContactForm />
-            <Details/>
-            <Locations/>
-            <Faq />
+            <ReactLenis root>
+                {/* <HeroSection /> */}
+                <ContactForm />
+                <Details />
+                <Locations />
+                <div className='bg-primary text-secondary-foreground'>
+                <Faq />
+                </div>
+            </ReactLenis>
         </div>
     )
 }
