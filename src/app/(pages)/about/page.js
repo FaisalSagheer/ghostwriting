@@ -15,7 +15,7 @@ function About() {
   return (
     <div>
       <ReactLenis root>
-        <TernarySection />
+        {/* <TernarySection /> */}
         {AboutHeroContent.map((item, index) => (
           <Hero data={item} key={index} />
         ))}

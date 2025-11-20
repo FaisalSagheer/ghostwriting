@@ -14,7 +14,7 @@ function Home() {
   return (
     <div>
       <ReactLenis root>
-        <TernarySection />
+        {/* <TernarySection /> */}
         <Hero />
         <Works />
         <Services />

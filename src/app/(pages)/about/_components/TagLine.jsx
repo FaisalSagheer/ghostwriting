@@ -6,7 +6,7 @@ import React from 'react'
 function TagLine() {
     return (
         <div>
-            <div className=''>
+            <div className='bg-primary-foreground'>
 
                 <div className='text-primary flex flex-wrap lg:flex-nowrap justify-around px-10 lg:px-24 py-10 lg:py-20'>
 

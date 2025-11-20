@@ -5,15 +5,18 @@ import ContactMin from './_components/ContactMini'
 import SecondarySection from './_components/Secondary'
 import TernarySection from './_components/TernarySection'
 import Visibility from './_components/Visibility'
+import ReactLenis from '@studio-freight/react-lenis'
 
 function Marketing() {
     return (
         <div>
-            <HeroMarketing/>
-            <SecondarySection/>
-            <Visibility/> 
-            <TernarySection/>
-            <ContactMin/>
+            <ReactLenis root>
+                <HeroMarketing />
+                <SecondarySection />
+                <Visibility />
+                <TernarySection />
+                <ContactMin />
+            </ReactLenis>
         </div>
     )
 }

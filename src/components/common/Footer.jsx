@@ -1,13 +1,66 @@
 "use client";
 
 import React from "react";
-import { Dumbbell, Mail, Phone, MapPin } from "lucide-react";
-import { footerLinks, navItems, socialLinks } from "@/constant";
-import { Button } from "../ui/button";
+import Logo from "@/../public/assets/logo.png"
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const anima = `hover:text-white transition-colors duration-300`
+  const footerItems1=[
+    {
+      title:'Home',
+      href:'/'
+    },
+    {
+      title:'About Us',
+      href:'/about'
+    },
+    {
+      title:'Contact Us',
+      href:'/contact'
+    }
+  ]
+  const footerItems2=[
+    {
+      title:'Consultation',
+      href:'#'
+    },
+    {
+      title:'Ghostwriting',
+      href:'/ghostwriting'
+    },
+    {
+      title:'Editing',
+      href:'#'
+    },
+    {
+      title:'Cover Design',
+      href:'#'
+    },
+    {
+      title:'Publishing',
+      href:'/Publishing'
+    },
+    {
+      title:'Marketing',
+      href:'/marketing'
+    }
+  ] 
+  const footerItem3=[
+    {
+      title:'Consultation',
+      href:'#'
+    },
+    {
+      title:'Social Media Management & Marketing',
+      href:'#'
+    },
+    {
+      title:'Website Design',
+      href:'#'
+    }
+  ]
   return (
     <footer className="bg-primary-foreground text-primary">
       <div className="px-8 lg:px-14 py-4 lg:pt-4 max-w-7xl mx-auto">
@@ -17,8 +70,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div>
                 <Link className="text-2xl" href="/">
-                  {/* <img src='/' alt="Logo" /> */}
-                  Logo
+                  <Image src={Logo} className="w-22 h-22" alt="Logo" />
                 </Link>
               </div>
               <p className="w-sm text-sm text-gray-400">
@@ -27,46 +79,30 @@ const Footer = () => {
                 totam, at sed dignissimos voluptatibus doloribus recusandae,
                 quisquam perferendis consectetur autem ab quis sint expedita!
               </p>
-              {/* <ul className="flex flex-col lg:flex-row gap-12 -my-8 font-medium lg:items-center">
-                {navItems.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      aria-current="page"
-                      className="cursor-pointer"
-                      href={item.href}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul> */}
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 space-x-12 space-y-12 pt-10 lg:pt-0">
               <div className="space-y-4">
                 <h4 className="text-sm">Quick Links</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li className={anima}>Home</li>
-                  <li className={anima}>About Us</li>
-                  <li className={anima}>Contact Us</li>
+                <ul className="space-y-2 text-gray-400 text-sm flex flex-col">
+                  {footerItems1.map((item,index)=>
+                  <Link className={anima} href={item.href} key={index}>{item.title}</Link>
+                )}
                 </ul>
               </div>
               <div className="space-y-4">
                 <h4 className="text-sm">Services for Author</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li className={anima}>Consultation</li>
-                  <li className={anima}>Ghostwriting</li>
-                  <li className={anima}>Cover Design</li>
-                  <li className={anima}>Publishing</li>
-                  <li className={anima}>Marketing</li>
-                  <li className={anima}>Editing</li>
+                <ul className="space-y-2 text-sm text-gray-400 flex flex-col">
+                  {footerItems2.map((item,index)=>
+                  <Link className={anima} href={item.href} key={index}>{item.title}</Link>
+                )}
                 </ul>
               </div>
               <div className="space-y-3">
                 <h4 className="text-sm">Services for Author</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li className={anima}>Consultation</li>
-                  <li className={anima}>Social Media Management & Marketing</li>
-                  <li className={anima}>Website Desisgn</li>
+                <ul className="space-y-2 text-sm text-gray-400 flex flex-col">
+                  {footerItem3.map((item,index)=>
+                  <Link className={anima} href={item.href} key={index}>{item.title}</Link>
+                )}
                 </ul>
               </div>
               <div className="space-y-3">

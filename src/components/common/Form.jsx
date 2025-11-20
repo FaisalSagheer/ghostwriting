@@ -46,7 +46,7 @@ const Form = () => {
         <Button
           variant="outline"
           type="submit"
-          className="w-full bg-foreground text-white font-semibold py-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
+          className="w-full bg-foreground text-white hover:text-foreground font-semibold hover:border border-foreground py-4 rounded-lg transition flex items-center justify-center space-x-2"
         >
           <Mail className="h-5 w-5" />
           <span>Send Message</span>

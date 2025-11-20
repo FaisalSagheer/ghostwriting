@@ -18,7 +18,7 @@ function ContactMini(props) {
                     <Button variant="outline">
                         {button1}
                     </Button>
-                    <Button className={`${bg_color}`}>
+                    <Button className={`${bg_color} border-foreground border`}>
                         {button2}
                     </Button>
                 </div>

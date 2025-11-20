@@ -5,17 +5,21 @@ import Benefits from './_components/Benefits'
 import Services from './_components/Services'
 import ContactMin from './_components/ContactMini'
 import Faq from '@/components/common/Faq'
+import ReactLenis from '@studio-freight/react-lenis'
 
 function GhostWriting() {
   return (
     <div>
-      <HeroSection/>
-      <Benefits/>
-      <Services/>
-      <ContactMin/>
-      <div className='bg-foreground'>
-      <Faq/>
-      </div>
+      <ReactLenis root>
+
+        <HeroSection />
+        <Benefits />
+        <Services />
+        <ContactMin />
+        <div className='bg-primary text-black'>
+          <Faq />
+        </div>
+      </ReactLenis>
     </div>
   )
 }
