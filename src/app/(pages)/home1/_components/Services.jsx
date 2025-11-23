@@ -16,7 +16,7 @@ function Services() {
     },
     {
       title: "Book Editing",
-      href: "/",
+      href: "#",
     },
     {
       title: "Book Publishing",
@@ -24,11 +24,11 @@ function Services() {
     },
     {
       title: "Book Cover Design",
-      href: "/",
+      href: "#",
     },
     {
       title: "Video Book Trailer",
-      href: "/",
+      href: "#",
     },
     {
       title: "Book Marketing",
@@ -36,15 +36,15 @@ function Services() {
     },
   ];
   return (
-    <div className="bg-accent text-secondary-foreground">
+    <div className="bg-accent-foreground text-primary">
       <div className="py-10 lg:py-20 px-8 lg:px-14 max-w-7xl mx-auto">
         {/* <div className="text-sm py-3">Welcome</div> */}
         <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
           <div>
             <h2 className="text-5xl lg:text-6xl leading-14 lg:leading-18 w-sm lg:w-xl capitalize">
-              Professional Ghostwriters are here to help you!{" "}
+              Our Professionals Are Here To Help You!{" "}
             </h2>
-            <p className="w-sm lg:w-lg font-normal py-8 leading-6 text-secondary-foreground/60">
+            <p className="w-sm lg:w-lg font-normal py-8 leading-6 text-primary/80">
               When you team up with us, you're not just hiring a company to get the work done: you're getting personalized assistance at every step. We take care of the nitty-gritty of every single thing, so you can focus on what you do best.
             </p>
             <div className="ml-4">
@@ -109,7 +109,7 @@ function Services() {
           </div>
           <div>
             <img
-              src="https://placehold.co/800x600/efefef/000000/png"
+              src="https://placehold.co/800x800/efefef/000000/png"
               className="rounded-2xl"
               alt="/"
             />
