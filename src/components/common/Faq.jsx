@@ -15,7 +15,7 @@ function Faq() {
           </p>
         </div>
         <div >
-          <div className="flex flex-wrap lg:flex-nowrap lg:gap-26 items-center pt-10">
+          <div className="flex flex-wrap lg:flex-nowrap lg:gap-26 justify-center items-center pt-10">
             <div className="space-y-6">
               {FaqContent.map((item, index) =>
                 <FaqCard data={item} key={index} />
