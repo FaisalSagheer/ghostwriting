@@ -20,7 +20,7 @@ function Navbar() {
   };
   return (
     <nav className="bg-accent text-background">
-      <div className="mx-auto relative text-sm max-w-7xl">
+      <div className="mx-auto relative text-sm ">
         <div className="flex justify-between items-center py-6 px-12">
           <div>
             <Link className="text-2xl" href="/">

@@ -8,6 +8,8 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
+import Img from '@/../public/assets/HeroCommon.png'
+import Image from "next/image";
 
 function Hero(props) {
   const {
@@ -20,20 +22,15 @@ function Hero(props) {
     button2,
     className,
   } = props.data;
-  const [isModal, setModal] = useState(false);
-  const handleModal = () => {
-    setModal(true)
-  }
+  const buttonStyle = 'border-2 border-white/60 rounded-3xl px-10 py-6 text-lg font-semibold'
+
   return (
     <>
-      <div className="bg-foreground">
+      {/* <div className="bg-foreground">
         <div className="text-center text-primary flex flex-col items-center px-10 lg:px-24 py-10 lg:py-28">
           <h4>{subTitle}</h4>
           <h1 className={`${className} leading-16 lg:w-2xl`}>{title}</h1>
           <p className="text-[1rem] py-5 lg:w-3xl">{description} </p>
-          {/* <div>
-            <Button onClick={()=>setModal(true)}>Get In Touch</Button>
-          </div> */}
           <div className="ml-4">
             <ul className="list-disc grid grid-cols-2 gap-8 font-light cursor-pointer">
               <li>
@@ -80,8 +77,74 @@ function Hero(props) {
             </ul>
           </div>
         </div>
+      </div> */}
+      <div className="text-primary relative py-26">
+        <div className="absolute inset-0">
+          <Image
+            className="absolute -z-10 bg-cover bg-center bg-no-repeat w-screen h-dvh md:h-screen lg:h-full"
+            src={Img}
+            alt="Img"
+          />
+        </div>
+        <div className="px-8 lg:px-14 text-center lg:text-left mx-auto">
+          <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
+            <div>
+              <h2 className="text-6xl lg:text-8xl font-bold leading-14 lg:leading-20 w-sm lg:w-xl capitalize">
+                Professional GhostWriters Are Here To Help You!{" "}
+              </h2>
+              <p className="w-sm lg:w-xl font-light pt-24 leading-6 text-lg text-primary/80">
+                When you team up with us, you're not just hiring a company to get the work done: you're getting personalized assistance at every step. We take care of the nitty-gritty of every single thing, so you can focus on what you do best.
+              </p>
+
+            </div>
+            <div className="pt-6 mt-70">
+              <ul className="flex items-center gap-y-20 flex-col font-light cursor-pointer">
+                <li>
+                  <HoverCard>
+                    <HoverCardTrigger className={buttonStyle}>Services For Authors</HoverCardTrigger>
+                    <HoverCardContent>
+                      <DropdownMenuLabel>
+                        <Link href="#">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/ghostwriting">GhostWriting</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="#">Cover Design</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/publishing">Publishing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/marketing">Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="#">Editing</Link>
+                      </DropdownMenuLabel>
+                    </HoverCardContent>
+                  </HoverCard>
+                </li>
+                <li>
+                  <HoverCard>
+                    <HoverCardTrigger className={buttonStyle}>Services For Businesses</HoverCardTrigger>
+                    <HoverCardContent>
+                      <DropdownMenuLabel>
+                        <Link href="#">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="#">Social Media Management & Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="#">Website Design</Link>
+                      </DropdownMenuLabel>
+                    </HoverCardContent>
+                  </HoverCard>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <Contact isOpen={isModal} isClose={() => setModal(false)} />
     </>
   );
 }

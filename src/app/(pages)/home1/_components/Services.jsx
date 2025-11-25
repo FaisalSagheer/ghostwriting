@@ -7,51 +7,26 @@ import {
 } from "@/components/ui/hover-card";
 import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
 import React from "react";
-
+import Img from '@/../public/assets/ServicesHome.png'
+import Image from "next/image";
 function Services() {
-  const links = [
-    {
-      title: "Ghostwriting",
-      href: "/ghostwriting",
-    },
-    {
-      title: "Book Editing",
-      href: "#",
-    },
-    {
-      title: "Book Publishing",
-      href: "/publishing",
-    },
-    {
-      title: "Book Cover Design",
-      href: "#",
-    },
-    {
-      title: "Video Book Trailer",
-      href: "#",
-    },
-    {
-      title: "Book Marketing",
-      href: "/marketing",
-    },
-  ];
+ const buttonStyle='border-2 border-white/60 rounded-2xl lg:rounded-3xl px-4 lg:px-10 py-2 lg:py-6 text-[0.9rem] lg:text-lg font-semibold' 
   return (
-    <div className="bg-accent-foreground text-primary">
-      <div className="py-10 lg:py-20 px-8 lg:px-14 max-w-7xl mx-auto">
-        {/* <div className="text-sm py-3">Welcome</div> */}
+    <div className="text-primary bg-background">
+      <div className="pl-0 lg:pl-14 pt-10 lg:pt-0 lg:py-0 text-center lg:text-left mx-auto">
         <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
-          <div>
-            <h2 className="text-5xl lg:text-6xl leading-14 lg:leading-18 w-sm lg:w-xl capitalize">
-              Our Professionals Are Here To Help You!{" "}
+          <div className="px-10 lg:px-0">
+            <h2 className="text-6xl lg:text-8xl font-bold leading-14 lg:leading-20 lg:w-xl capitalize">
+              Professional GhostWriters Are Here To Help You!{" "}
             </h2>
-            <p className="w-sm lg:w-lg font-normal py-8 leading-6 text-primary/80">
+            <p className="lg:w-lg font-light py-8 leading-6 text-primary/80">
               When you team up with us, you're not just hiring a company to get the work done: you're getting personalized assistance at every step. We take care of the nitty-gritty of every single thing, so you can focus on what you do best.
             </p>
-            <div className="ml-4">
-              <ul className="list-disc grid grid-cols-2 gap-2 font-light cursor-pointer">
+            <div className="pb-4 lg:pb-0 lg:py-6">
+              <ul className=" font-light cursor-pointer flex gap-4">
                 <li>
                   <HoverCard>
-                    <HoverCardTrigger>Services For Authors</HoverCardTrigger>
+                    <HoverCardTrigger className={buttonStyle}>Services For Authors</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
@@ -76,7 +51,7 @@ function Services() {
                 </li>
                 <li>
                   <HoverCard>
-                    <HoverCardTrigger>Services For Businesses</HoverCardTrigger>
+                    <HoverCardTrigger className={buttonStyle}>Services For Businesses</HoverCardTrigger>
                     <HoverCardContent>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
@@ -92,28 +67,12 @@ function Services() {
                 </li>
               </ul>
             </div>
-            {/* <div className="ml-4">
-              <ul className="list-disc grid grid-cols-2 lg:grid-cols-3 gap-2 font-light">
-                {links.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.href}>{link.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-6 lg:mt-10">
-              <Button className="uppercase hover:bg-primary-foreground" variant="outline">
-                Looking For a GhostWriter
-              </Button>
-            </div> */}
           </div>
-          <div>
-            <img
-              src="https://placehold.co/800x800/efefef/000000/png"
-              className="rounded-2xl"
+            <Image
+              src={Img}
+              className="bg-cover bg-center lg:h-screen"
               alt="/"
             />
-          </div>
         </div>
       </div>
     </div>
