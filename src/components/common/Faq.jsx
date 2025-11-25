@@ -22,9 +22,9 @@ function Faq() {
               )
               }
             </div>
-            <div className="border-secondary-foreground text-background border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:my-0">
+            {/* <div className="border-secondary-foreground text-background border-[0.8px] rounded-2xl py-12 px-8 w-lg my-12 lg:my-0">
               <Form />
-            </div>
+            </div> */}
 
           </div>
         </div>
