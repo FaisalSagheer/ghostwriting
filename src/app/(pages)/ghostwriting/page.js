@@ -17,7 +17,7 @@ function GhostWriting() {
         <Services />
         <ContactMin />
         <div className='bg-primary text-black'>
-          <Faq />
+          {/* <Faq /> */}
         </div>
       </ReactLenis>
     </div>

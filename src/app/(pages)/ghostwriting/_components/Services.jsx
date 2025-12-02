@@ -12,7 +12,7 @@ function Services() {
                     <UpperSection data={item} key={index} />
                 )
             }
-            <div className='grid grid-cols-1 lg:grid-cols-3 max-w-7xl mx-auto pt-18 gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 max-w-7xl mx-auto pt-18 gap-12 lg:gap-6'>
                 {servicesGhostwriting.map((services, index) =>
                     <Card data={services} key={index} />
                 )}

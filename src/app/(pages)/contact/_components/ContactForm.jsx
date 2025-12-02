@@ -48,6 +48,7 @@ function ContactForm() {
                                         First name
                                     </label>
                                     <input
+                                        required={true}
                                         type="text"
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                         placeholder="First Name"
@@ -59,6 +60,7 @@ function ContactForm() {
                                     </label>
                                     <input
                                         type="text"
+                                        required={true}
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                         placeholder="Last Name"
                                     />
@@ -81,7 +83,10 @@ function ContactForm() {
                                         Phone Number
                                     </label>
                                     <input
-                                        type="text"
+                                        // value=''
+                                        type="tel"
+                                        maxLength={11}
+                                        required={true}
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                         placeholder="123456789"
                                     />
@@ -134,13 +139,24 @@ function ContactForm() {
                                 <label className="block text-sm font-medium text-primary mb-2">Which best describes you?</label>
                                 <div className='flex gap-14'>
                                     <ul className='space-y-2'>
-                                        <li>Author / Writer</li>
-                                        <li>Entrepreneur</li>
-                                        <li>Other(please specify)</li>
+                                        <li className='flex gap-2'>
+                                            <input type="radio" value='author' />
+                                            Author / Writer
+                                        </li>
+                                        <li className='flex gap-2'>
+                                            <input type="radio" value='entreprenuer' />
+                                            Entrepreneur
+                                        </li>
+                                        <li className='-mb-4'>Other(please specify)</li>
                                     </ul>
                                     <ul className='space-y-2'>
-                                        <li>Small Business / Startup</li>
-                                        <li>Agent</li>
+                                        <li className='flex gap-2'>
+                                            <input type="radio" />
+                                            Small Business / Startup
+                                        </li>
+                                        <li className='flex gap-2'>
+                                            <input type="radio" value='agent' />
+                                            Agent</li>
                                         {/* <li>Publisher</li>
                                         <li>Illustrator</li> */}
                                     </ul>

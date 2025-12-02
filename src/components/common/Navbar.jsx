@@ -20,8 +20,8 @@ function Navbar() {
   };
   return (
     <nav className="bg-accent text-background">
-      <div className="mx-auto relative text-sm ">
-        <div className="flex justify-between items-center py-6 px-12">
+      <div className="mx-auto relative text-sm">
+        <div className="flex justify-between items-center py-4 lg:py-6 px-12">
           <div>
             <Link className="text-2xl" href="/">
               <Image src={Logo} className="w-22 h-22 -my-5 lg:-my-10" alt="Logo" />
@@ -129,11 +129,11 @@ function Navbar() {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/services">
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li className="z-50">
                 <HoverCard>
                   <HoverCardTrigger>Services For Author</HoverCardTrigger>
@@ -145,9 +145,9 @@ function Navbar() {
                       <Link href="/ghostwriting">GhostWriting</Link>
                     </DropdownMenuLabel>
                     <DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="#">Editing</Link>
-                      </DropdownMenuLabel>
+                      <Link href="#">Editing</Link>
+                    </DropdownMenuLabel>
+                    <DropdownMenuLabel>
                       <Link href="#">Cover Design</Link>
                     </DropdownMenuLabel>
                     <DropdownMenuLabel>

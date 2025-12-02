@@ -11,15 +11,15 @@ const Form = () => {
       <div className="flex justify-between gap-4">
         <div>
           <div className="flex justify-center items-center">
-          <Image src={Logo} className="w-44 -my-14" alt="/"/>
+          <Image src={Logo} className="w-60 -mt-14 -mb-14" alt="/"/>
           </div>
           <div><h1 className="text-5xl text-center font-bold py-6">30% OFF</h1></div>
           <form className="space-y-6">
-            <h4 className="text-xl text-center font-light">Sign Up and get an extra<span className="underline font-semibold">30% off</span> on your first package</h4>
+            <h4 className="text-sm text-center font-light">Sign Up and get an extra<h2 className="underline font-semibold">30% off</h2> on your first package</h4>
             <div className="gap-6">
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  You're Name
+                  Name
                 </label>
                 <input
                   type="text"
@@ -65,7 +65,7 @@ const Form = () => {
         <div>
           <Image
             src={Img}
-            className="bg-cover w-[32vw] -my-4"
+            className="bg-cover w-[28vw]"
             alt="/"
           />
         </div>
