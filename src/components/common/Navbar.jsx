@@ -24,7 +24,7 @@ function Navbar() {
         <div className="flex justify-between items-center py-4 lg:py-6 px-12">
           <div>
             <Link className="text-2xl" href="/">
-              <Image src={Logo} className="w-22 h-22 -my-5 lg:-my-10" alt="Logo" />
+              <Image src={Logo} className="w-26 h-28 -my-5 lg:-my-10" alt="Logo" />
             </Link>
           </div>
           <div className="hidden lg:flex justify-center font-medium items-center cursor-pointer">

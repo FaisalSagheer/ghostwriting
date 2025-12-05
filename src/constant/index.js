@@ -223,16 +223,23 @@ export const publishingContent = [
 ];
 export const PublishingProcess = [
   {
-    tag: "Craft",
-    title: "Publishing Made Simple",
-    description:
-      "We handle every detail of your book's journey from manuscript to market. Our comprehensive publishing process ensures your work meets professional standards.",
-    button1: "Explore",
-    button2: "Details",
-    head1: "Formating",
-    head2: "Design",
-    head3: "Distribution",
     cardTag: "Formating",
+    cardTitle: "Professional manuscript formatting for seamless reading",
+    cardDescrption:
+      "We ensure your manuscript is perfectly formatted for all e-book platforms. Our experts optimize layout, typography, and file compatibility.",
+    cardButton1: "Learn",
+    cardButton2: "More",
+  },
+  {
+    cardTag: "Design",
+    cardTitle: "Professional manuscript formatting for seamless reading",
+    cardDescrption:
+      "We ensure your manuscript is perfectly formatted for all e-book platforms. Our experts optimize layout, typography, and file compatibility.",
+    cardButton1: "Learn",
+    cardButton2: "More",
+  },
+  {
+    cardTag: "Distribution",
     cardTitle: "Professional manuscript formatting for seamless reading",
     cardDescrption:
       "We ensure your manuscript is perfectly formatted for all e-book platforms. Our experts optimize layout, typography, and file compatibility.",
@@ -325,16 +332,26 @@ export const MarketingHeroContent = [
 
 export const MarketingProcess = [
   {
-    tag: "Strategies",
-    title: "Comprehensive marketing approach",
-    description:
-      "Navigate the complex world of book marketing with our targeted strategies. We create customized campaigns that elevate your book's visibility and reach.",
-    button1: "Explore",
-    button2: "Details",
-    head1: "Social Media",
-    head2: "Email Campaigns",
-    head3: "Influencer Reach",
+    id:'Social Media',
     cardTag: "Social Media",
+    cardTitle: "Targeted social media marketing for maximum exposure",
+    cardDescrption:
+      "Leverage platforms like Instagram. Twitter, and Facebook to create buzz and engage potential readers directly.",
+    cardButton1: "Learn",
+    cardButton2: "More",
+  },
+  {
+    id:'Email Campaigns',
+    cardTag: "Email Campaigns",
+    cardTitle: "Targeted social media marketing for maximum exposure",
+    cardDescrption:
+      "Leverage platforms like Instagram. Twitter, and Facebook to create buzz and engage potential readers directly.",
+    cardButton1: "Learn",
+    cardButton2: "More",
+  },
+  {
+    id:'Influencer Reach',
+    cardTag: "Influencer Reach",
     cardTitle: "Targeted social media marketing for maximum exposure",
     cardDescrption:
       "Leverage platforms like Instagram. Twitter, and Facebook to create buzz and engage potential readers directly.",
