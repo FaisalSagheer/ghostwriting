@@ -1,9 +1,17 @@
 'use client'
 import { Button } from '@headlessui/react'
-import { ChevronDownIcon, Locate, Mail, MapPin, Phone } from 'lucide-react'
-import React from 'react'
-
+import { ChevronDownIcon, Mail } from 'lucide-react'
+import React, { useState } from 'react'
+import { Label } from "@/components/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 function ContactForm() {
+    const [formData, setFormData] = useState({ fName: "", lName: "", Num: "", Email: "", region: "", budget: "",describe:'', comment: "" })
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(formData)
+    }
+    const regx = formData.Num.match(/\D/)
     return (
         <section className="bg-secondary-foreground py-10">
             <div className="mx-auto flex justify-center flex-wrap lg:flex-nowrap px-6 lg:px-16 py-14">
@@ -41,13 +49,20 @@ function ContactForm() {
                     {/* Contact Form */}
                     <div className="px-2 lg:px-0 py-8 lg:py-0">
                         <h3 className="text-2xl font-semibold mb-8 text-primary w-lg">Have an idea? Let our experts help you build an empire with it!</h3>
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={(e)=>handleSubmit(e)}>
                             <div className="grid grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-primary mb-2">
                                         First name
                                     </label>
                                     <input
+                                        value={formData.fName}
+                                        onChange={e => {
+                                            setFormData({
+                                                ...formData,
+                                                fName: e.target.value
+                                            })
+                                        }}
                                         required={true}
                                         type="text"
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
@@ -59,6 +74,13 @@ function ContactForm() {
                                         Last name
                                     </label>
                                     <input
+                                        value={formData.lName}
+                                        onChange={e => {
+                                            setFormData({
+                                                ...formData,
+                                                lName: e.target.value
+                                            })
+                                        }}
                                         type="text"
                                         required={true}
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
@@ -73,6 +95,13 @@ function ContactForm() {
                                         Email Address
                                     </label>
                                     <input
+                                        value={formData.Email}
+                                        onChange={e => {
+                                            setFormData({
+                                                ...formData,
+                                                Email: e.target.value
+                                            })
+                                        }}
                                         type="email"
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                         placeholder="john@example.com"
@@ -83,9 +112,15 @@ function ContactForm() {
                                         Phone Number
                                     </label>
                                     <input
-                                        // value=''
-                                        type="tel"
-                                        maxLength={11}
+                                        value={regx}
+                                        onChange={e => {
+                                            setFormData({
+                                                ...formData,
+                                                Num: e.target.value
+                                            })
+                                        }}
+                                        type="text"
+                                        maxLength={22}
                                         required={true}
                                         className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                         placeholder="123456789"
@@ -99,13 +134,19 @@ function ContactForm() {
                                 <div className="mt-2 grid grid-cols-1">
                                     <select
                                         id="country"
-                                        name="country"
+                                        value={formData.region}
+                                        onChange={e => {
+                                            setFormData({
+                                                ...formData,
+                                                region: e.target.value
+                                            })
+                                        }}
                                         autoComplete="country-name"
                                         className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-secondary-foreground py-1.5 pr-8 pl-3 text-base text-secondary outline-1 -outline-offset-1 outline-white/80 *:bg-secondary-foreground focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
                                     >
-                                        <option>United States</option>
-                                        <option>Canada</option>
-                                        <option>Mexico</option>
+                                        <option value='us'>United States</option>
+                                        <option value='ca'>Canada</option>
+                                        <option value='mx'>Mexico</option>
                                     </select>
                                     <ChevronDownIcon
                                         aria-hidden="true"
@@ -121,12 +162,18 @@ function ContactForm() {
                                 <div className="mt-2 grid grid-cols-1">
                                     <select
                                         id="budget"
-                                        name="budget"
+                                        value={formData.budget}
+                                        onChange={e => {
+                                            setFormData({
+                                                ...formData,
+                                                budget: e.target.value
+                                            })
+                                        }}
                                         className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-secondary-foreground py-1.5 pr-8 pl-3 text-base text-secondary outline-1 -outline-offset-1 outline-white/80 *:bg-secondary-foreground focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
                                     >
-                                        <option>Below-$500</option>
-                                        <option>$500-$1000</option>
-                                        <option>$1000-$5000</option>
+                                        <option value='below-$500'>Below-$500</option>
+                                        <option value='$500-$1000'>$500-$1000</option>
+                                        <option value='$1000-$5000'>$1000-$5000</option>
                                     </select>
                                     <ChevronDownIcon
                                         aria-hidden="true"
@@ -137,29 +184,35 @@ function ContactForm() {
 
                             <div>
                                 <label className="block text-sm font-medium text-primary mb-2">Which best describes you?</label>
-                                <div className='flex gap-14'>
-                                    <ul className='space-y-2'>
+                                <div>
+                                    <RadioGroup className='grid grid-cols-2 space-y-2' defaultValue='author' onChange={e => {
+                                        setFormData({
+                                            ...formData,
+                                            describe: e.target.value
+                                        })
+                                    }}>
                                         <li className='flex gap-2'>
-                                            <input type="radio" value='author' />
-                                            Author / Writer
+                                            <RadioGroupItem type="radio" value='author' />
+                                            <Label htmlFor="author">Author / Writer</Label>
                                         </li>
                                         <li className='flex gap-2'>
-                                            <input type="radio" value='entreprenuer' />
-                                            Entrepreneur
-                                        </li>
-                                        <li className='-mb-4'>Other(please specify)</li>
-                                    </ul>
-                                    <ul className='space-y-2'>
-                                        <li className='flex gap-2'>
-                                            <input type="radio" />
-                                            Small Business / Startup
+                                            <RadioGroupItem type="radio" value='entrepreneur' />
+                                            <Label htmlFor='entrepreneur'> Entrepreneur</Label>
                                         </li>
                                         <li className='flex gap-2'>
-                                            <input type="radio" value='agent' />
-                                            Agent</li>
-                                        {/* <li>Publisher</li>
-                                        <li>Illustrator</li> */}
-                                    </ul>
+                                            <RadioGroupItem type="radio" value='startup' />
+                                            <Label htmlFor='startup'>
+                                                Small Business / Startup
+                                            </Label>
+                                        </li>
+                                        <li className='flex gap-2'>
+                                            <RadioGroupItem type="radio" value='agent' />
+                                            <Label htmlFor='agent'>
+                                                Agent
+                                            </Label>
+                                        </li>
+                                        <li className='-mb-4 list-none'>Other(please specify)</li>
+                                    </RadioGroup>
                                 </div>
                             </div>
                             <div>
@@ -167,6 +220,13 @@ function ContactForm() {
                                     Comment
                                 </label>
                                 <textarea
+                                    value={formData.comment}
+                                    onChange={e => {
+                                        setFormData({
+                                            ...formData,
+                                            comment: e.target.value
+                                        })
+                                    }}
                                     rows={4}
                                     className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
                                     placeholder="let us know a little bit about what you’re looking for!"
