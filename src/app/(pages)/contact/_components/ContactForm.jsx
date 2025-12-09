@@ -1,250 +1,230 @@
 'use client'
+
 import { Button } from '@headlessui/react'
 import { ChevronDownIcon, Mail } from 'lucide-react'
 import React, { useState } from 'react'
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-function ContactForm() {
-    const [formData, setFormData] = useState({ fName: "", lName: "", Num: "", Email: "", region: "", budget: "",describe:'', comment: "" })
+import { Toaster, toast } from 'sonner'
 
-    const handleSubmit = (e) => {
+function ContactForm({ sendMail }) {
+    const [formData, setFormData] = useState({
+        fName: "",
+        lName: "",
+        Num: "",
+        Email: "",
+        region: "",
+        budget: "",
+        describe: "",
+        comment: ""
+    })
+    const [loading, setLoading] = useState(false)
+
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(formData)
+
+        // Basic client-side validation
+        if (!formData.fName || !formData.lName || !formData.Email || !formData.Num) {
+            toast.error("Please fill in all required fields.")
+            return
+        }
+
+        if (!/\S+@\S+\.\S+/.test(formData.Email)) {
+            toast.error("Please enter a valid email address.")
+            return
+        }
+
+        setLoading(true)
+        try {
+            await sendMail(formData)
+            toast.success("Message sent successfully!")
+            // Optional: reset form
+            setFormData({
+                fName: "", lName: "", Num: "", Email: "",
+                region: "", budget: "", describe: "", comment: ""
+            })
+        } catch (error) {
+            toast.error("Failed to send message. Please try again.")
+        } finally {
+            setLoading(false)
+        }
     }
-    const regx = formData.Num.match(/\D/)
+
+    // Only allow numbers, spaces, dashes, parentheses, and +
+    const handlePhoneChange = (e) => {
+        const value = e.target.value
+        if (/^[\d\s\-\+\(\)]*$/.test(value)) {
+            setFormData({ ...formData, Num: value })
+        }
+    }
+
     return (
         <section className="bg-secondary-foreground py-10">
             <div className="mx-auto flex justify-center flex-wrap lg:flex-nowrap px-6 lg:px-16 py-14">
-                {/* <div className="lg:space-y-4 mt-12">
-                    <h4>Connect</h4>
-                    <h2 className="text-6xl font-bold pb-4 pt-2 lg:pt-0">Get In Touch</h2>
-                    <p className="text-xl max-w-3xl mx-auto pb-4">
-                        Let's collaborate to bring your vision to life.
-                    </p>
-                    <div>
-                        <ul className='space-y-8'>
-                            <li className='underline flex gap-2'>
-                                <Mail />
-                                <span>
-                                    hello@digitalalchemy.com
-                                </span>
-                            </li>
-                            <li className='underline flex gap-2'>
-                                <Phone />
-                                <span>
-                                    +1(555) 123-4567
-                                </span>
-                            </li>
-                            <li className='flex gap-2'>
-                                <MapPin />
-                                <span>
-                                    123 Publishing Lane, New York, NY 10001
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div> */}
-
-                <div>
-                    {/* Contact Form */}
+                <div className="w-full max-w-2xl">
                     <div className="px-2 lg:px-0 py-8 lg:py-0">
-                        <h3 className="text-2xl font-semibold mb-8 text-primary w-lg">Have an idea? Let our experts help you build an empire with it!</h3>
-                        <form className="space-y-6" onSubmit={(e)=>handleSubmit(e)}>
-                            <div className="grid grid-cols-2 gap-6">
+                        <h3 className="text-2xl font-semibold mb-8 text-primary">
+                            Have an idea? Let our experts help you build an empire with it!
+                        </h3>
+
+                        <form className="space-y-6" onSubmit={handleSubmit}>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-primary mb-2">
-                                        First name
+                                        First name <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         value={formData.fName}
-                                        onChange={e => {
-                                            setFormData({
-                                                ...formData,
-                                                fName: e.target.value
-                                            })
-                                        }}
-                                        required={true}
+                                        onChange={(e) => setFormData({ ...formData, fName: e.target.value })}
+                                        required
                                         type="text"
-                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
+                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40 bg-secondary-foreground/50"
                                         placeholder="First Name"
                                     />
                                 </div>
+
                                 <div>
                                     <label className="block text-sm font-medium text-primary mb-2">
-                                        Last name
+                                        Last name <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         value={formData.lName}
-                                        onChange={e => {
-                                            setFormData({
-                                                ...formData,
-                                                lName: e.target.value
-                                            })
-                                        }}
+                                        onChange={(e) => setFormData({ ...formData, lName: e.target.value })}
+                                        required
                                         type="text"
-                                        required={true}
-                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
+                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40 bg-secondary-foreground/50"
                                         placeholder="Last Name"
                                     />
                                 </div>
                             </div>
-                            <div className='grid md:grid-cols-2 gap-6'>
 
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-primary mb-2">
-                                        Email Address
+                                        Email Address <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         value={formData.Email}
-                                        onChange={e => {
-                                            setFormData({
-                                                ...formData,
-                                                Email: e.target.value
-                                            })
-                                        }}
+                                        onChange={(e) => setFormData({ ...formData, Email: e.target.value })}
                                         type="email"
-                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
+                                        required
+                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40 bg-secondary-foreground/50"
                                         placeholder="john@example.com"
                                     />
                                 </div>
+
                                 <div>
                                     <label className="block text-sm font-medium text-primary mb-2">
-                                        Phone Number
+                                        Phone Number <span className="text-red-500">*</span>
                                     </label>
                                     <input
-                                        value={regx}
-                                        onChange={e => {
-                                            setFormData({
-                                                ...formData,
-                                                Num: e.target.value
-                                            })
-                                        }}
-                                        type="text"
-                                        maxLength={22}
-                                        required={true}
-                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
-                                        placeholder="123456789"
-                                    />
-                                </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                                <label htmlFor="country" className="block text-sm/6 font-medium text-primary">
-                                    Region
-                                </label>
-                                <div className="mt-2 grid grid-cols-1">
-                                    <select
-                                        id="country"
-                                        value={formData.region}
-                                        onChange={e => {
-                                            setFormData({
-                                                ...formData,
-                                                region: e.target.value
-                                            })
-                                        }}
-                                        autoComplete="country-name"
-                                        className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-secondary-foreground py-1.5 pr-8 pl-3 text-base text-secondary outline-1 -outline-offset-1 outline-white/80 *:bg-secondary-foreground focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
-                                    >
-                                        <option value='us'>United States</option>
-                                        <option value='ca'>Canada</option>
-                                        <option value='mx'>Mexico</option>
-                                    </select>
-                                    <ChevronDownIcon
-                                        aria-hidden="true"
-                                        className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-400 sm:size-4"
+                                        value={formData.Num}
+                                        onChange={handlePhoneChange}
+                                        type="tel"
+                                        required
+                                        maxLength={20}
+                                        className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40 bg-secondary-foreground/50"
+                                        placeholder="(555) 123-4567"
                                     />
                                 </div>
                             </div>
 
-                            <div className="sm:col-span-3">
-                                <label htmlFor="budget" className="block text-sm/6 font-medium text-primary">
-                                    Budget
-                                </label>
-                                <div className="mt-2 grid grid-cols-1">
-                                    <select
-                                        id="budget"
-                                        value={formData.budget}
-                                        onChange={e => {
-                                            setFormData({
-                                                ...formData,
-                                                budget: e.target.value
-                                            })
-                                        }}
-                                        className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-secondary-foreground py-1.5 pr-8 pl-3 text-base text-secondary outline-1 -outline-offset-1 outline-white/80 *:bg-secondary-foreground focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
-                                    >
-                                        <option value='below-$500'>Below-$500</option>
-                                        <option value='$500-$1000'>$500-$1000</option>
-                                        <option value='$1000-$5000'>$1000-$5000</option>
-                                    </select>
-                                    <ChevronDownIcon
-                                        aria-hidden="true"
-                                        className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-400 sm:size-4"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <label className="block text-sm font-medium text-primary mb-2">Which best describes you?</label>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <RadioGroup className='grid grid-cols-2 space-y-2' defaultValue='author' onChange={e => {
-                                        setFormData({
-                                            ...formData,
-                                            describe: e.target.value
-                                        })
-                                    }}>
-                                        <li className='flex gap-2'>
-                                            <RadioGroupItem type="radio" value='author' />
-                                            <Label htmlFor="author">Author / Writer</Label>
-                                        </li>
-                                        <li className='flex gap-2'>
-                                            <RadioGroupItem type="radio" value='entrepreneur' />
-                                            <Label htmlFor='entrepreneur'> Entrepreneur</Label>
-                                        </li>
-                                        <li className='flex gap-2'>
-                                            <RadioGroupItem type="radio" value='startup' />
-                                            <Label htmlFor='startup'>
-                                                Small Business / Startup
-                                            </Label>
-                                        </li>
-                                        <li className='flex gap-2'>
-                                            <RadioGroupItem type="radio" value='agent' />
-                                            <Label htmlFor='agent'>
-                                                Agent
-                                            </Label>
-                                        </li>
-                                        <li className='-mb-4 list-none'>Other(please specify)</li>
-                                    </RadioGroup>
+                                    <label className="block text-sm font-medium text-primary mb-2">Region</label>
+                                    <div className="relative">
+                                        <select
+                                            value={formData.region}
+                                            onChange={(e) => setFormData({ ...formData, region: e.target.value })}
+                                            className="w-full appearance-none rounded-lg border border-primary bg-secondary-foreground/50 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-foreground"
+                                        >
+                                            <option value="">Select region</option>
+                                            <option value="us">United States</option>
+                                            <option value="ca">Canada</option>
+                                            <option value="mx">Mexico</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <ChevronDownIcon className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-primary mb-2">Budget</label>
+                                    <div className="relative">
+                                        <select
+                                            value={formData.budget}
+                                            onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                                            className="w-full appearance-none rounded-lg border border-primary bg-secondary-foreground/50 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-foreground"
+                                        >
+                                            <option value="">Select budget</option>
+                                            <option value="below-500">Below $500</option>
+                                            <option value="500-1000">$500 - $1,000</option>
+                                            <option value="1000-5000">$1,000 - $5,000</option>
+                                            <option value="5000+">$5,000+</option>
+                                        </select>
+                                        <ChevronDownIcon className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none" />
+                                    </div>
                                 </div>
                             </div>
+
                             <div>
-                                <label className="block text-sm font-medium text-primary mb-3 pt-2">
-                                    Comment
+                                <label className="block text-sm font-medium text-primary mb-3">
+                                    Which best describes you?
+                                </label>
+                                <RadioGroup
+                                    value={formData.describe}
+                                    onValueChange={(value) => setFormData({ ...formData, describe: value })}
+                                    className="grid grid-cols-1 sm:grid-cols-2 gap-3"
+                                >
+                                    <div className="flex items-center space-x-2">
+                                        <RadioGroupItem value="author" id="author" />
+                                        <Label htmlFor="author" className="cursor-pointer">Author / Writer</Label>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <RadioGroupItem value="entrepreneur" id="entrepreneur" />
+                                        <Label htmlFor="entrepreneur" className="cursor-pointer">Entrepreneur</Label>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <RadioGroupItem value="startup" id="startup" />
+                                        <Label htmlFor="startup" className="cursor-pointer">Small Business / Startup</Label>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <RadioGroupItem value="agent" id="agent" />
+                                        <Label htmlFor="agent" className="cursor-pointer">Agent</Label>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <RadioGroupItem value="other" id="other-desc" />
+                                        <Label htmlFor="other-desc" className="cursor-pointer">Other</Label>
+                                    </div>
+                                </RadioGroup>
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-primary mb-2">
+                                    Tell us about your project
                                 </label>
                                 <textarea
                                     value={formData.comment}
-                                    onChange={e => {
-                                        setFormData({
-                                            ...formData,
-                                            comment: e.target.value
-                                        })
-                                    }}
-                                    rows={4}
-                                    className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40"
-                                    placeholder="let us know a little bit about what you’re looking for!"
+                                    onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
+                                    rows={5}
+                                    className="w-full px-4 py-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary-foreground focus:border-transparent text-white placeholder-primary/40 bg-secondary-foreground/50 resize-none"
+                                    placeholder="Let us know a little bit about what you’re looking for..."
                                 />
                             </div>
 
                             <Button
-                                variant="outline"
                                 type="submit"
-                                className="border hover:bg-primary hover:text-secondary-foreground w-full bg-secondary-foreground text-white font-semibold py-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
+                                disabled={loading}
+                                className="w-full bg-primary text-secondary-foreground hover:bg-primary/90 font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2 disabled:opacity-70"
                             >
                                 <Mail className="h-5 w-5" />
-                                <span>Send Message</span>
+                                <span>{loading ? "Sending..." : "Send Message"}</span>
                             </Button>
                         </form>
                     </div>
                 </div>
             </div>
+            <Toaster position="top-center" />
         </section>
     )
 }
