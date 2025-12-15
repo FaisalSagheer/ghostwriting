@@ -9,17 +9,17 @@ export async function sendMail(formData) {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: 'smtp.secureserver.net',
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: process.env.GMAIL_USER,           // your@gmail.com
-        pass: process.env.GMAIL_APP_PASSWORD,  // 16-char App Password
+        user: process.env.GODADDY_USER,           // your@gmail.com
+        pass: process.env.GODADDY_PASSWORD,  // 16-char App Password
       },
     })
 
     await transporter.sendMail({
-      from: `"Contact Form" <${process.env.GMAIL_USER}>`,
+      from: `"Contact Form" <${process.env.GODADDY_USER}>`,
       to: process.env.RECEIVER_EMAIL, // e.g. hello@yourdomain.com
       replyTo: formData.Email,
       subject: `New message from ${formData.fName} ${formData.lName}`,
