@@ -2,7 +2,6 @@
 import Hero from "@/components/common/Hero";
 import { AboutHeroContent } from "@/constant";
 import React from "react";
-import Services from "./_components/Services";
 import TagLine from "./_components/TagLine";
 import Benefits from "./_components/Benefits";
 import Journey from "./_components/Journey";
