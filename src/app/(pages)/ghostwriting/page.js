@@ -4,14 +4,12 @@ import HeroSection from './_components/HeroSection'
 import Benefits from './_components/Benefits'
 import Services from './_components/Services'
 import ContactMin from './_components/ContactMini'
-import Faq from '@/components/common/Faq'
-import ReactLenis from '@studio-freight/react-lenis'
+import { ReactLenis} from 'lenis/react';
 
 function GhostWriting() {
   return (
     <div>
       <ReactLenis root>
-
         <HeroSection />
         <Benefits />
         <Services />

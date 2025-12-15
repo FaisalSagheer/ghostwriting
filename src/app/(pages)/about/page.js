@@ -8,8 +8,7 @@ import Benefits from "./_components/Benefits";
 import Journey from "./_components/Journey";
 import Testimonials from "@/components/common/Testimonials";
 import Choose from "../../../components/common/Choose";
-import TernarySection from "../home1/_components/TernarySection";
-import ReactLenis from "@studio-freight/react-lenis";
+import { ReactLenis} from 'lenis/react';
 
 function About() {
   return (

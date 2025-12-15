@@ -5,7 +5,7 @@ import { PublishinContact, publishingContent } from '@/constant'
 import React from 'react'
 import TagLine from './_components/TagLine'
 import ContactMini from '@/components/common/ContactMini'
-import ReactLenis from '@studio-freight/react-lenis'
+import { ReactLenis} from 'lenis/react';
 
 function Publishing() {
     return (

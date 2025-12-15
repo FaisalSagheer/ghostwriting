@@ -5,7 +5,7 @@ import ContactMin from './_components/ContactMini'
 import SecondarySection from './_components/Secondary'
 import TernarySection from './_components/TernarySection'
 import Visibility from './_components/Visibility'
-import ReactLenis from '@studio-freight/react-lenis'
+import { ReactLenis} from 'lenis/react';
 
 function Marketing() {
     return (

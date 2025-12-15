@@ -2,13 +2,13 @@
 import Faq from '@/components/common/Faq'
 import Details from './_components/Details'
 import Locations from './_components/Locations'
-// import ReactLenis from '@studio-freight/react-lenis'
 import ContactMail from './_components/mail'
+import { ReactLenis} from 'lenis/react';
 
 function Contact() {
     return (
         <div>
-            {/* <ReactLenis root> */}
+            <ReactLenis root>
                 {/* <HeroSection /> */}
                 <ContactMail />
                 <Details />
@@ -16,7 +16,7 @@ function Contact() {
                 <div className='bg-primary text-secondary-foreground'>
                     <Faq />
                 </div>
-            {/* </ReactLenis> */}
+            </ReactLenis>
         </div>
     )
 }
