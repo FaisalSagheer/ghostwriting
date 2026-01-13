@@ -34,13 +34,13 @@ const Hero = () => {
             </div>
             <div className="flex justify-center gap-4 mt-6 lg:mt-8">
               <Popover>
-                <PopoverTrigger>
-                  <Button className="flex items-center justify-center bg-primary/10 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
+                <Button className="flex items-center justify-center bg-primary/10 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
+                  <PopoverTrigger asChild>
                     Sign Up
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent>  
-                  <LoginForm/>
+                  </PopoverTrigger>
+                </Button>
+                <PopoverContent>
+                  <LoginForm />
                 </PopoverContent>
               </Popover>
             </div>

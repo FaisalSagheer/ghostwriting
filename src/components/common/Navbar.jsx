@@ -18,6 +18,8 @@ function Navbar() {
   const toggleNavbar = () => {
     setMobileDrawerOpen(!MobileDrawerOpen);
   };
+  const HoverCardContentStyle = 'w-sm lg:w-[10rem]'
+
   return (
     <nav className="bg-accent text-background">
       <div className="mx-auto relative text-sm">
@@ -55,7 +57,7 @@ function Navbar() {
                 <li>
                   <HoverCard>
                     <HoverCardTrigger>Services For Authors</HoverCardTrigger>
-                    <HoverCardContent>
+                    <HoverCardContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
@@ -80,7 +82,7 @@ function Navbar() {
                 <li>
                   <HoverCard>
                     <HoverCardTrigger>Services For Businesses</HoverCardTrigger>
-                    <HoverCardContent>
+                    <HoverCardContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
