@@ -29,8 +29,8 @@ function Testimonials() {
                       <Image size={20} color="#e0e0e0" />
                     </div>
                     <div className="pt-10">
-                      <h4 className="text-sm ">Harry</h4>
-                      <h6 className="text-xs text-gray-200">Architect</h6>
+                      <h4 className="text-sm">{item.Name}</h4>
+                      {/* <h6 className="text-xs text-gray-200">Architect</h6> */}
                     </div>
                   </div>
                 </div>
@@ -38,12 +38,6 @@ function Testimonials() {
             </div>
           </div>
         </div>
-        {/* <div className="flex justify-end mt-8">
-          <Button className="text-sm lg:text-lg py-6 -mt-16 capitalize bg-background text-black underline hover:bg-white">
-            <Link href="/services">Learn More About our services</Link>
-            <ArrowRight />
-          </Button>
-        </div> */}
       </div>
     </div>
   );

@@ -49,19 +49,28 @@ export const navItems = [
 export const Testimonial = [
   {
     description: `
-      Lorem ipsum dolor sit amet consectetur adipisicing 
-      Ratione magnam, magni quae`,
+      Helped me build my business from the ground up! 
+      The whold team is extremely supportive and communicative. 
+      Would recommed all solo entrepreneurs to work with them!`,
+    Name: 'Rebbeca Love'
   },
   {
     description: `
-      Lorem ipsum dolor sit amet consectetur adipisicing 
-      Ratione magnam, magni quae`,
+      Helped me bring my book to life! 
+      could not ask for a better team to publish my book!`,
+    Name: 'Will Nelson'
   },
   {
     description: `
-      Lorem ipsum dolor sit amet consectetur adipisicing 
-      Ratione magnam, magni quae`,
+      Three lines of Zaila, my book gained all its 
+      fame through their marketing strategies. 
+      Beyond satisfied `,
+    Name: 'Andrew'
   },
+  // {
+  //   description:'My home-cook business is set! thank you Digital Alchemy!',
+  //   Name:'Neikeisha '
+  // }
 ];
 export const footerLinks = {
   "Quick Links": [
@@ -173,13 +182,13 @@ export const FaqContent = [
     value: "item-7",
     title: "Do you work with international clients?",
     description:
-  "Yes,  we work globally. We have an in-house and virtual team that is allotted to you, depending upon your needs and services."
+      "Yes,  we work globally. We have an in-house and virtual team that is allotted to you, depending upon your needs and services."
   },
   {
     value: "item-8",
     title: "Do I have to pay up front?",
     description:
-  "Yes. Your designated team of experts is paid per project, but we do offer payment plans that break down your services into milestones, providing you with everything you need without affecting quality."
+      "Yes. Your designated team of experts is paid per project, but we do offer payment plans that break down your services into milestones, providing you with everything you need without affecting quality."
   },
 ];
 
@@ -200,8 +209,8 @@ export const AboutHeroContent = [
 export const about_contact = [
   {
     title: "Ready to start your journey",
-    description:
-      "Let's transform your writing dreams into published reality today.",
+    // description:
+    //   "Let's transform your writing dreams into published reality today.",
     button1: "Start",
     button2: "Consult",
     bg_color: "bg-primary-foreground",
@@ -332,7 +341,7 @@ export const MarketingHeroContent = [
 
 export const MarketingProcess = [
   {
-    id:'Social Media',
+    id: 'Social Media',
     cardTag: "Social Media",
     cardTitle: "Targeted social media marketing for maximum exposure",
     cardDescrption:
@@ -341,7 +350,7 @@ export const MarketingProcess = [
     cardButton2: "More",
   },
   {
-    id:'Email Campaigns',
+    id: 'Email Campaigns',
     cardTag: "Email Campaigns",
     cardTitle: "Targeted social media marketing for maximum exposure",
     cardDescrption:
@@ -350,7 +359,7 @@ export const MarketingProcess = [
     cardButton2: "More",
   },
   {
-    id:'Influencer Reach',
+    id: 'Influencer Reach',
     cardTag: "Influencer Reach",
     cardTitle: "Targeted social media marketing for maximum exposure",
     cardDescrption:

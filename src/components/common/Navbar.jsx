@@ -12,13 +12,14 @@ import {
   HoverCardTrigger,
 } from "../ui/hover-card";
 import Image from "next/image";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 function Navbar() {
   const [MobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!MobileDrawerOpen);
   };
-  const HoverCardContentStyle = 'w-sm lg:w-[10rem]'
+  const HoverCardContentStyle = 'w-sm lg:w-[11rem] p-3'
 
   return (
     <nav className="bg-accent text-background">
@@ -55,9 +56,9 @@ function Navbar() {
                   </Link>
                 </li> */}
                 <li>
-                  <HoverCard>
-                    <HoverCardTrigger>Services For Authors</HoverCardTrigger>
-                    <HoverCardContent className={HoverCardContentStyle}>
+                  <Popover>
+                    <PopoverTrigger>Services For Authors</PopoverTrigger>
+                    <PopoverContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
@@ -76,13 +77,13 @@ function Navbar() {
                       <DropdownMenuLabel>
                         <Link href="/marketing">Marketing</Link>
                       </DropdownMenuLabel>
-                    </HoverCardContent>
-                  </HoverCard>
+                    </PopoverContent>
+                  </Popover>
                 </li>
                 <li>
-                  <HoverCard>
-                    <HoverCardTrigger>Services For Businesses</HoverCardTrigger>
-                    <HoverCardContent className={HoverCardContentStyle}>
+                  <Popover>
+                    <PopoverTrigger>Services For Businesses</PopoverTrigger>
+                    <PopoverContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
                         <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
@@ -92,8 +93,8 @@ function Navbar() {
                       <DropdownMenuLabel>
                         <Link href="#">Website Design</Link>
                       </DropdownMenuLabel>
-                    </HoverCardContent>
-                  </HoverCard>
+                    </PopoverContent>
+                  </Popover>
                 </li>
                 <li>
                   <Link href="/contact">

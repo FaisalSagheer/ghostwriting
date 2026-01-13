@@ -29,9 +29,9 @@ function Benefits() {
             <div className='bg-primary text-background'>
                 <div className='flex flex-col items-center px-10 lg:px-24 py-10 lg:py-20'>
                     <div className='text-center'>
-                        <h4>
+                        {/* <h4>
                             Benefits
-                        </h4>
+                        </h4> */}
                         <h1 className='text-7xl leading-18 lg:leading-20 lg:w-xl pt-2'>
                             From Start To{" "}
                             <span>

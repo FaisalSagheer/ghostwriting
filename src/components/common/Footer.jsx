@@ -68,17 +68,17 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row lg:gap-x-24">
             {/* Logo */}
             <div className="space-y-3">
-              <div>
+              <div className="-mt-6">
                 <Link className="text-2xl" href="/">
                   <Image src={Logo} className="w-22 h-22" alt="Logo" />
                 </Link>
               </div>
-              <p className="w-sm text-sm text-gray-400">
+              {/* <p className="w-sm text-sm text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
                 odit ducimus quaerat quas cum maxime modi natus quia distinctio
                 totam, at sed dignissimos voluptatibus doloribus recusandae,
                 quisquam perferendis consectetur autem ab quis sint expedita!
-              </p>
+              </p> */}
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 space-x-12 space-y-12 pt-10 lg:pt-0">
               <div className="space-y-4">
