@@ -474,7 +474,7 @@ export const cardBenefit = [
 
 export const GhostwritingServicesContent = [
   {
-    tag: "Tagline",
+    // tag: "Tagline",
     title: "Our Best GhostWriting Services",
     description:
       "We provide tailored writin services to help you shape your narrative at every step of your journey",
@@ -484,9 +484,13 @@ export const servicesGhostwriting = [
   {
     src: "https://placehold.co/600x400/efefef/000000/png",
     tag: "Tagline",
-    title: "Fictional Book Writing",
+    title: "Spiritual & Religion",
+    type: "Non-Fiction",
+    href: "/",
     description:
-      "Bring your imaginative stories to life with expert fiction ghostwriting.",
+      `Christian Demonology, a subset of Angelology (the study of angels), gives light on a 
+variety of questions, including who or what demons are, what they do, who or what they 
+serve, and what happens to them after death.`,
   },
   {
     icon: <Album size={60} />,

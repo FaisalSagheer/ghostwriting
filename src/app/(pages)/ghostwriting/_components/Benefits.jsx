@@ -10,7 +10,7 @@ function Benefits() {
         <div className="bg-background text-primary">
             <div className="mx-auto max-w-8xl py-10 lg:py-26 px-10 lg:px-0">
                 <div className="flex justify-center flex-col items-center">
-                        <h4>Benefits</h4>
+                        {/* <h4>Benefits</h4> */}
                     <div className="text-center flex flex-col items-center">
                         <h2 className="capitalize text-5xl lg:text-7xl w-sm lg:w-4xl leading-14 lg:leading-20 pt-2">
                             Write less achieve more with ghostwriting services
