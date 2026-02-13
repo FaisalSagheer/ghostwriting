@@ -22,7 +22,7 @@ function Card(props) {
                     </div>
                     <Button className="hover:underline text-sm">
                         <Link href={{href}}>
-                            View Sample
+                            Download Sample
                         </Link>
                     </Button>
                 </div>
