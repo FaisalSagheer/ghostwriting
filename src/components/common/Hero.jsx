@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/hover-card";
 import Img from '@/../public/assets/HeroCommon.png'
 import Image from "next/image";
-import { Button } from "../ui/button";
 import { DropdownMenuLabel } from "../ui/dropdown-menu";
 
 function Hero() {
@@ -34,8 +33,7 @@ function Hero() {
                 OUR PROFESSIONALS ARE HERE TO HELP YOU
               </h2>
               <p className="w-sm lg:w-xl font-light leading-6 text-lg text-primary/80">
-                When you team up with us, you're not just hiring a company to get the work done: you're getting personalized assistance at every step. We take care of the nitty-gritty of every single thing, so you can focus on what you do best.
-              </p>
+Fantastic books deserve to be in the spotlight. Our marketing team creates smart and focused marketing strategies to connect your book with your desired audience. We'll help you build momentum and make sales so you can attract long-term readers by publishing your book on the correct platform.              </p>
 
             </div>
             <div className="lg:pt-6 lg:mt-70 z-10">

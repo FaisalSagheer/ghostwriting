@@ -70,7 +70,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="-mt-6">
                 <Link className="text-2xl" href="/">
-                  <Image src={Logo} className="w-22 h-22" alt="Logo" />
+                  <Image src={Logo} className="w-22 h-22 invert brightness-90" alt="Logo" />
                 </Link>
               </div>
               {/* <p className="w-sm text-sm text-gray-400">

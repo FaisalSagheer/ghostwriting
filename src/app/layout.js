@@ -17,7 +17,7 @@ const PoetsenOne = Playfair_Display({
 
 export const metadata = {
   title: "GhostWriting",
-  description: "Created By Faisal Sagheer",
+  description: "",
 };
 
 export default function RootLayout({ children }) {

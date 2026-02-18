@@ -1,18 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import Hero from "./_components/Hero";
 import Choose from "../../../components/common/Choose";
 import Faq from "@/components/common/Faq";
 import GhostWrtitingAndRewriting from "./_components/Services/GhostWrtitingAndRewriting";
-import BookreadingAndProofreading from "./_components/Services/BookeditingAndProofreading";
 import DesignAndFormating from "./_components/Services/DesignAndFormating";
 import BookeditingAndProofreading from "./_components/Services/BookeditingAndProofreading";
 import PublishingAndProduction from "./_components/Services/PublishingAndProduction";
 import BookmarketingAndPromotion from "./_components/Services/BookmarketingAndPromotion";
 import AuthorplatformAndAuthor from "./_components/Services/AuthorplatformAndAuthor";
 import Consultation from "./_components/Consultation";
-import Contact from "../../../components/common/ContactModal";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 const Services = () => {
   return (

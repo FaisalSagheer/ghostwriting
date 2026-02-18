@@ -1,60 +1,89 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Settings } from "lucide-react";
+import { cardData } from "@/constant";
+import { ArrowRight, Brush, FilePen, FileSearch, Image, ScrollText, SpellCheck, WifiPen } from "lucide-react";
 import Link from "next/link";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 import React from "react";
 function Process() {
+  const data = [
+    {
+      icon:<ScrollText size={70} />,
+      title: "Project Brief",
+      description: `
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
+    },
+    {
+      icon:<FileSearch size={70} />,
+      title: "Research",
+      description: `
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
+    },
+    {
+      icon:<FilePen size={70} />,
+      title: "Producing Content",
+      description: `
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
+    },
+    {
+      icon:<SpellCheck size={70} />,
+      title: "Editing & Proofreading",
+      description: `
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
+    },
+    {
+      icon:<Brush size={70} />,
+      title: "Designing",
+      description: `
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
+    },
+    {
+      icon:<WifiPen size={70} />,
+      title: "Book publishing, Branding & Marketing",
+      description: `
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusamus at pariatur dolorem fuga necessitatibus natus quas vel, harum quaerat, quasi voluptatem culpa unde! Nemo quam assumenda doloribus labore explicabo`,
+    },
+  ];
   return (
-    <div className="bg-foreground text-primary">
-      <div className="py-10 lg:py-20 px-8 lg:px-18">
-        <div className="flex flex-wrap lg:flex-nowrap lg:justify-between items-center">
-          <div>
-            <h2 className="text-5xl lg:text-6xl w-xs lg:w-sm lg:leading-16 leading-14">
-              We Don't Just Write—We Listen
+    <div>
+      <div className="py-10 lg:py-26 px-10 lg:px-0 bg-foreground">
+        <div className="mx-auto max-w-7xl flex justify-center flex-col items-center">
+          <div className="text-center flex flex-col items-center">
+            <h3 className="">Our Amazing Ghostwriting Process</h3>
+            <h2 className="text-5xl py-4">
+              We have professional ghostwriters on board
             </h2>
-            <p className="lg:w-lg text-sm md:text-[1rem] pt-5 lg:pt-3">
-              At USK Publishing, we don't believe in cookie-cutter ghost
-              writing services. We invest time in understanding what you want to
-              achieve.
-            </p>
-            <div className="text-gray-200 w-sm">
-              <p className="py-8">
-                Here's what you can expect working with us: Discover our process
-              </p>
-              <ul className="list-disc space-y-1">
-                <li>
-                  A personalized approach to fit your voice, style, and message.
-                </li>
-                <li>
-                  An expert team of seasoned writers and editors who've worked
-                  across genres.
-                </li>
-                <li>
-                  Hands-on support from idea to final publication. You're
-                  covered at every stage.
-                </li>
-              </ul>
+          </div>
+          <p className="lg:w-lg text-center">
+            Our team follows perfect protocols to ensure they provide
+            professional book ghostwriting services.
+          </p>
+          <div>
+            <div className="grid grid-cols-2 lg:grid-cols-3 py-16 gap-16">
+              {data.map((item, index) => (
+                <HoverCard key={index}>
+                  <div className="flex justify-center items-center ">
+                    <HoverCardTrigger className="flex flex-col items-center gap-y-4">
+                      {item.icon} 
+                      <h4 className="w-[10rem] text-center">{item.title}</h4>
+                    </HoverCardTrigger>
+                  </div>
+                  <HoverCardContent>{item.description}</HoverCardContent>
+                </HoverCard>
+              ))}
             </div>
           </div>
-          <div className="flex lg:hidden pt-6">
-            <Button variant="outline">
-              <Link href="/services">Discover Our Process</Link>
-            </Button>
-          </div>
-          <div className="py-10 lg:py-0">
-            <img
-              src="https://placehold.co/800x600/efefef/000000/png"
-              className="rounded-2xl"
-              alt="/"
-            />
-          </div>
-
         </div>
-        <div className="lg:flex hidden">
-          <Button variant="outline">
-            <Link href="/services">Discover Our Process</Link>
+        {/* <div className="flex justify-end mt-8">
+          <Button className="text-sm lg:text-lg py-6 -mt-16 capitalize bg-background text-black underline hover:bg-white">
+            <Link href="/services">Learn More About our services</Link>
+            <ArrowRight />
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
