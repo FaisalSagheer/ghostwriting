@@ -1,5 +1,5 @@
 "use client";
-import CircularGallery from "@/components/CircularGallery";
+import CircularGallery from "../../../../components/CircularGallery";
 import React from "react";
 
 function Works() {

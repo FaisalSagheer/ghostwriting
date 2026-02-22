@@ -1,6 +1,7 @@
 'use client'
 import ContactMini from '../../../../components/common/ContactMini'
-import { GhostWritingContact } from '../../servicesforauthor/constant'
+import { GhostWritingContact } from '../../../../constant'
+import React from 'react'
 
 function ContactMin() {
   return (

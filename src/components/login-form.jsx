@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { cn } from "../lib/utils"
+import { Button } from "./ui/button"
+import { Card, CardContent } from "./ui/card"
 
 import {
   Field,
@@ -8,8 +8,8 @@ import {
   FieldGroup,
   FieldLabel,
   FieldSeparator,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+} from "./ui/field"
+import { Input } from "./ui/input"
 import Discount from '@/../public/assets/discount.png'
 import Image from "next/image"
 import Logo from '@/../public/assets/logo.png'

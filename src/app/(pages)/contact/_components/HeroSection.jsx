@@ -1,6 +1,6 @@
 'use client'
-import Hero from '@/components/common/Hero'
-import { ContactHero } from '@/constant'
+import Hero from '../../servicesforauthor/common/Hero'
+import { ContactHero } from '../../../../constant'
 import React from 'react'
 
 function HeroSection() {

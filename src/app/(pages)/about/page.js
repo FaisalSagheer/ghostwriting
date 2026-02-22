@@ -1,11 +1,11 @@
 "use client";
-import Hero from "@/components/common/Hero";
-import { AboutHeroContent } from "@/constant";
+import Hero from "../servicesforauthor/common/Hero";
+import { AboutHeroContent } from "../../../constant";
 import React from "react";
 import TagLine from "./_components/TagLine";
 import Benefits from "./_components/Benefits";
 import Journey from "./_components/Journey";
-import Testimonials from "@/components/common/Testimonials";
+import Testimonials from "../../../components/common/Testimonials";
 import Choose from "../../../components/common/Choose";
 import { ReactLenis} from 'lenis/react';
 

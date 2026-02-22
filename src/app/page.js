@@ -1,5 +1,5 @@
 'use client'
-import Home from '@/app/(pages)/home/page'
+import Home from './(pages)/home/page'
 import React from 'react'
 
 function page() {

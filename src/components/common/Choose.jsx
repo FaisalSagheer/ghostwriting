@@ -1,6 +1,6 @@
 'use client'
-import { Button } from '@/components/ui/button'
-import { ChooseUsContent } from '@/constant'
+import { Button } from '../ui/button'
+import { ChooseUsContent } from '../../constant'
 import { Box, ChevronRight } from 'lucide-react'
 import React from 'react'
 

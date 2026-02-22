@@ -1,4 +1,5 @@
-import { Button } from '../../ui/button'
+
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import React from 'react'
 
@@ -8,10 +9,10 @@ function Card(CardData) {
         <>
             <div className='border rounded-2xl border-white/60 flex flex-col justify-center' >
                 <div className={className}>
-                    <img className='rounded-t-2xl' src={src} alt="/" />
+                    <img className='rounded-t-2xl' src={src||null} alt="/" />
                 </div>
                 <div className='p-6 space-y-5'>
-                    {icon}
+                    {icon||null}
                     <h4>{subtitle}</h4>
                     <h2 className='text-4xl'>{title}</h2>
                     <p className='text-[1rem] text-white/90'>{description}</p>
@@ -21,7 +22,7 @@ function Card(CardData) {
                         <span className='text-sm'>{type}</span>
                     </div>
                     <Button className="hover:underline text-sm">
-                        <Link href={href}>
+                        <Link href={href||'/'}>
                             Download Sample
                         </Link>
                     </Button>

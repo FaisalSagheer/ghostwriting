@@ -1,9 +1,9 @@
 'use client'
+import { Button } from '@headlessui/react'
 import { ArrowRight, ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
-import { cardBenefit } from '../../servicesforauthor/constant'
-import { Button } from '@/components/ui/button'
+import { cardBenefit } from '../constant'
 
 function Benefits() {
     return (

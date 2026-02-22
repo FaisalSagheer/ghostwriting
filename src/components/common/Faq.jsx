@@ -1,5 +1,5 @@
 "use client";
-import { FaqContent } from "@/constant";
+import { FaqContent } from "../../constant";
 import React from "react";
 
 import Form from "./Form";

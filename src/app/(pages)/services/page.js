@@ -1,7 +1,7 @@
 "use client";
 import Hero from "./_components/Hero";
 import Choose from "../../../components/common/Choose";
-import Faq from "@/components/common/Faq";
+import Faq from "../../../components/common/Faq";
 import GhostWrtitingAndRewriting from "./_components/Services/GhostWrtitingAndRewriting";
 import DesignAndFormating from "./_components/Services/DesignAndFormating";
 import BookeditingAndProofreading from "./_components/Services/BookeditingAndProofreading";

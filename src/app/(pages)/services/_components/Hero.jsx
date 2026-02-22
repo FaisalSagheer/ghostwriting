@@ -1,10 +1,10 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../components/ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "../../../../components/ui/popover";
 import React from "react";
 import Contact from "../../../../components/common/ContactModal";
 

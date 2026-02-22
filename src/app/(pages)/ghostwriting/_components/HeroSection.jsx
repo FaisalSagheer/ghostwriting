@@ -1,7 +1,7 @@
 'use client'
-import Hero from '@/components/common/Hero'
-import { GhostWritingHero } from '@/constant'
+import Hero from '../../servicesforauthor/common/Hero'
 import React from 'react'
+import { GhostWritingHero } from '../../servicesforauthor/constant'
 
 function HeroSection() {
   return (

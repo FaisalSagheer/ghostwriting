@@ -1,6 +1,6 @@
 'use client'
-import ContactMini from '@/components/common/ContactMini'
-import { MarketingContact } from '@/constant'
+import ContactMini from '../../../../components/common/ContactMini'
+import { MarketingContact } from '../../../../constant'
 import React from 'react'
 
 function ContactMin() {

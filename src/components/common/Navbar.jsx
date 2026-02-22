@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import {
   DropdownMenuLabel,
-} from "@/components/ui/dropdown-menu";
+} from "../ui/dropdown-menu";
 import {
   HoverCard,
   HoverCardContent,
@@ -63,7 +63,7 @@ function Navbar() {
                         <Link href="#">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/ghostwriting">GhostWriting</Link>
+                        <Link href="/servicesforauthor/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="#">Editing</Link>

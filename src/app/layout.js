@@ -1,8 +1,8 @@
 import { Playfair_Display, Prompt } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
-import { Popover } from "@/components/ui/popover";
+import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer";
+import { Popover } from "../components/ui/popover";
 
 const PromptFont = Prompt({
   variable: "--font-prompt-serif",

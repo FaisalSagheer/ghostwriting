@@ -1,13 +1,13 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { cardData } from "@/constant";
+import { Button } from "../../../../components/ui/button";
+import { cardData } from "../../../../constant";
 import { ArrowRight, Brush, FilePen, FileSearch, Image, ScrollText, SpellCheck, WifiPen } from "lucide-react";
 import Link from "next/link";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card";
+} from "../../../../components/ui/hover-card";
 import React from "react";
 function Process() {
   const data = [

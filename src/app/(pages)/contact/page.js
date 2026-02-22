@@ -1,5 +1,5 @@
 // 'use client'
-import Faq from '@/components/common/Faq'
+import Faq from '../../../components/common/Faq'
 import Details from './_components/Details'
 import Locations from './_components/Locations'
 import ContactMail from './_components/mail'

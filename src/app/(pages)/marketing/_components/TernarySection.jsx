@@ -1,7 +1,7 @@
 'use client'
-import Card from '@/components/common/Ternary/Card'
-import UpperSection from '@/components/common/Ternary/UpperSection'
-import { MarketingServicesContent, servicesContent, servicesMarketing, servicesPublishing } from '@/constant'
+import Card from '../../../../components/common/Ternary/Card'
+import UpperSection from '../../../../components/common/Ternary/UpperSection'
+import { MarketingServicesContent, servicesContent, servicesMarketing, servicesPublishing } from '../../../../constant'
 import React from 'react'
 
 function TernarySection() {

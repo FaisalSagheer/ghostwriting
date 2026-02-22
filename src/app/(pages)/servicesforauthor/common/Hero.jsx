@@ -1,15 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import Contact from "./ContactModal";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card";
+} from "../../../../components/ui/hover-card";
 import Img from '@/../public/assets/HeroCommon.png'
 import Image from "next/image";
-import { DropdownMenuLabel } from "../ui/dropdown-menu";
+import { DropdownMenuLabel } from "../../../../components/ui/dropdown-menu";
 
 function Hero() {
   const buttonStyle = 'border-2 border-white/60 rounded-3xl px-10 py-6 text-lg font-semibold'

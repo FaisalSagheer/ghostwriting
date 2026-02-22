@@ -1,7 +1,7 @@
 'use client'
-import Secondary from '@/components/common/Secondary'
-import { Button } from '@/components/ui/button'
-import { MarketingProcess } from '@/constant'
+import Secondary from '../../../../components/common/Secondary'
+import { Button } from '../../../../components/ui/button'
+import { MarketingProcess } from '../../../../constant'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 

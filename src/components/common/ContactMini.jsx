@@ -1,7 +1,7 @@
 'use client'
-import { Button } from '@/components/ui/button'
+import { Button } from '../ui/button'
 import React from 'react'
-import { LoginForm } from '@/components/login-form'
+import { LoginForm } from '../login-form'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 
 function ContactMini(props) {

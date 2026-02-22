@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../ui/accordion";
+} from "./accordion";
 function FaqCard(props) {
     const { value, title, description } = props.data;
 

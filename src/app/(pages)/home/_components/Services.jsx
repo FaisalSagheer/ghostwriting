@@ -4,12 +4,12 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card";
+} from "../../../../components/ui/hover-card";
 import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
 import React from "react";
 import Img from '@/../public/assets/ServicesHome.png'
 import Image from "next/image";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "../../../../components/ui/popover";
 function Services() {
  const buttonStyle='border-2 border-white/60 rounded-3xl px-10 py-6 text-lg font-semibold' 
   return (

@@ -3,8 +3,8 @@
 import { Button } from '@headlessui/react'
 import { ChevronDownIcon, Mail } from 'lucide-react'
 import React, { useState } from 'react'
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Label } from "../../../../components/ui/label"
+import { RadioGroup, RadioGroupItem } from "../../../../components/ui/radio-group"
 import { Toaster, toast } from 'sonner'
 
 function ContactForm({ sendMail }) {

@@ -3,11 +3,11 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "../../../../components/ui/popover"
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { LoginForm } from "@/components/login-form";
-import PixelSnow from "@/components/PixelSnow";
+import { Button } from "../../../../components/ui/button";
+import { LoginForm } from "../../../../components/login-form";
+import PixelSnow from "../../../../components/PixelSnow";
 
 const Hero = () => {
   return (

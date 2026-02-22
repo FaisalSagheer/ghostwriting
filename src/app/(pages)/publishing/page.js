@@ -1,10 +1,10 @@
 'use client'
-import Hero from '@/components/common/Hero'
+import Hero from '../servicesforauthor/common/Hero'
 import PublishingSection from './_components/PublishingSection'
-import { PublishinContact, publishingContent } from '@/constant'
+import { PublishinContact, publishingContent } from '../../../constant'
 import React from 'react'
 import TagLine from './_components/TagLine'
-import ContactMini from '@/components/common/ContactMini'
+import ContactMini from '../../../components/common/ContactMini'
 import { ReactLenis} from 'lenis/react';
 
 function Publishing() {
