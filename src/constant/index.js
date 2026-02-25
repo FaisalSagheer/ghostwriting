@@ -556,3 +556,47 @@ export const ContactHero = [
     className: "text-6xl",
   },
 ];
+
+
+
+export const consultationHero = [
+  {
+    // subTitle: "Transform",
+    title: "Consultation Services",
+    description:
+      "Every great book begins with a chat with our team. With our consulting sessions, your ideas and the narratives of your book will be improved and sculpted. We listen to your ideas carefully, ask relevant questions, and provide a clear roadmap for you. This ensures that your book captures attention from the beginning to the end and stays focused throughout. Your ideas matter to us.",
+    href1: "",
+    href2: "",
+    button1: "Start",
+    button2: "Learn",
+    className: "text-7xl",
+  },
+]
+
+export const coverdesignHero = [
+  {
+    // subTitle: "Transform",
+    title: "Consultation Services",
+    description:
+    "They say a book cannot be judged by its cover. However, your book can literally be. Our cover design team will help you develop visually appealing, genre-smart covers that capture the soul of your novel. We use innovative ideas and market intelligence to make your book stand out on shelves and on screens. We work with our team of illustrators and designers and breathe life into your book.",
+    href1: "",
+    href2: "",
+    button1: "Start",
+    button2: "Learn",
+    className: "text-7xl",
+  },
+]
+
+export const editingHero = [
+  {
+    // subTitle: "Transform",
+    title: "Consultation Services",
+    description:
+    "Every great piece of literature can be remembered if it is edited well. Our editors improve your manuscript's clarity, flow, and consistency while maintaining your original voice. Our expert editors and proofreaders make sure that every page of your book is polished so that it reads smoothly, professionally, and with the impact your story deserves.",
+    href1: "",
+    href2: "",
+    button1: "Start",
+    button2: "Learn",
+    className: "text-7xl",
+  },
+]

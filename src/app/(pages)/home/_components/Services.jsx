@@ -16,7 +16,7 @@ function Services() {
     <div className="text-primary bg-background">
       <div className="pl-0 lg:pl-14 pt-10 lg:pt-0 lg:py-0 text-center lg:text-left mx-auto">
         <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
-          <div className="py-8 lg:py-0 px-10 lg:px-0">
+          <div className="py-8 px-10 lg:px-0">
             <h2 className="text-6xl lg:text-8xl font-bold leading-14 lg:leading-20 lg:w-xl capitalize">
               Professional GhostWriters Are Here To Help You!{" "}
             </h2>
@@ -71,7 +71,7 @@ function Services() {
           </div>
             <Image
               src={Img}
-              className="bg-cover bg-center lg:h-screen"
+              className="bg-cover bg-center min-h-96 h-[100vh] lg:w-2xl"
               alt="/"
             />
         </div>

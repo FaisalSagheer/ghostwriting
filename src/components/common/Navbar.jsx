@@ -60,22 +60,22 @@ function Navbar() {
                     <PopoverTrigger>Services For Authors</PopoverTrigger>
                     <PopoverContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
-                        <Link href="#">Consultation</Link>
+                        <Link href="/servicesforauthors/consultation">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/ghostwriting">GhostWriting</Link>
+                        <Link href="/servicesforauthors/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Editing</Link>
+                        <Link href="/servicesforauthors/editing">Editing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Cover Design</Link>
+                        <Link href="/servicesforauthors/coverdesign">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/publishing">Publishing</Link>
+                        <Link href="/servicesforauthors/publishing">Publishing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/marketing">Marketing</Link>
+                        <Link href="/servicesforauthors/marketing">Marketing</Link>
                       </DropdownMenuLabel>
                     </PopoverContent>
                   </Popover>
@@ -85,13 +85,13 @@ function Navbar() {
                     <PopoverTrigger>Services For Businesses</PopoverTrigger>
                     <PopoverContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
-                        <Link href="#">Consultation</Link>
+                        <Link href="/servicesforbusinesses/consultation">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Social Media Management & Marketing</Link>
+                        <Link href="/servicesforbusinesses/socialmediamarketing">Social Media Management & Marketing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Website Design</Link>
+                        <Link href="/servicesforbusinesses/websitedesign">Website Design</Link>
                       </DropdownMenuLabel>
                     </PopoverContent>
                   </Popover>

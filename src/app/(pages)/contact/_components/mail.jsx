@@ -1,8 +1,9 @@
-'use server'
+
 import ContactForm from './ContactForm'
 
 // Server Action — runs only on the server
 export async function sendMail(formData) {
+  'use server'
 
   // Dynamic import so it only loads on server
   const nodemailer = (await import('nodemailer')).default

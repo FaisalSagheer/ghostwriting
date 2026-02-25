@@ -24,41 +24,41 @@ const Footer = () => {
   const footerItems2=[
     {
       title:'Consultation',
-      href:'#'
+      href:'/servicesforauthors/consultation'
     },
     {
       title:'Ghostwriting',
-      href:'/ghostwriting'
+      href:'/servicesforauthors/ghostwriting'
     },
     {
       title:'Editing',
-      href:'#'
+      href:'/servicesforauthors/editing'
     },
     {
       title:'Cover Design',
-      href:'#'
+      href:'/servicesforauthors/coverdesign'
     },
     {
       title:'Publishing',
-      href:'/Publishing'
+      href:'/servicesforauthors/publishing'
     },
     {
       title:'Marketing',
-      href:'/marketing'
+      href:'/servicesforauthors/marketing'
     }
   ] 
   const footerItem3=[
     {
       title:'Consultation',
-      href:'#'
+      href:'/servicesforbusinesses/consultation'
     },
     {
       title:'Social Media Management & Marketing',
-      href:'#'
+      href:'/servicesforbusinesses/socialmediamanagement'
     },
     {
       title:'Website Design',
-      href:'#'
+      href:'/servicesforbusinesses/websitedesign'
     }
   ]
   return (
