@@ -48,10 +48,7 @@ export const navItems = [
 ];
 export const Testimonial = [
   {
-    description: `
-      Helped me build my business from the ground up! 
-      The whold team is extremely supportive and communicative. 
-      Would recommed all solo entrepreneurs to work with them!`,
+    description: "Helped me build my business from the ground up! The whold team is extremely supportive and communicative. Would recommed all solo entrepreneurs to work with them!",
     Name: 'Rebbeca Love'
   },
   {

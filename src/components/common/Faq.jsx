@@ -1,8 +1,6 @@
 "use client";
 import { FaqContent } from "@/constant";
 import React from "react";
-
-import Form from "./Form";
 import FaqCard from "../ui/FaqCard";
 function Faq() {
   return (

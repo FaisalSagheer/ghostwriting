@@ -22,7 +22,7 @@ function FaqCard(props) {
                         <h4 className="font-semibold lg:text-lg">{title}</h4>
                     </AccordionTrigger>
                     <AccordionContent className="leading-6.5">
-                        <p className="text-sm text-secondary-foreground whitespace-break-spaces">{description}</p>
+                        <p className="text-sm text-secondary-foreground md:whitespace-break-spaces">{description}</p>
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>

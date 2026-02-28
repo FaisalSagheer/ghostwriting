@@ -28,12 +28,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative z-10 px-6 lg:px-12 py-28 max-w-3xl mx-auto">
+      <div className="relative z-10 px-8 md:px-12 py-28 max-w-3xl mx-auto">
         <div className="lg:gap-38 items-center">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-primary mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
               Take your ideas to the next step with our services!</h1>
-            <div className="text-gray-200 text-lg">
+            <div className="text-gray-200 text-sm md:text-lg">
               <p className="leading-relaxed">
                 For 5 consecutive years, Digital Alchemy has provided top-tier services at the most affordable pricing. We aim to serve as catalysts, helping you grow and prosper: taking you in a unique and successful direction.
               </p>

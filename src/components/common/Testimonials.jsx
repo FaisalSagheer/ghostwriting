@@ -20,10 +20,10 @@ function Testimonials() {
             <div className="flex flex-wrap lg:flex-nowrap py-12 gap-6 lg:gap-4">
               {Testimonial.map((item, index) => (
                 <div
-                  className="mx-2 border-2 border-white/20 rounded-2xl py-4 px-6"
+                  className="md:w-sm mx-2 border-2 border-white/20 rounded-2xl py-4 px-6"
                   key={index}
                 >
-                  <p className="whitespace-pre -ml-9">{item.description}</p>
+                  <p>{item.description}</p>
                   <div className="flex items-center gap-4">
                     <div className="rounded-full bg-primary/50 px-3 py-4 flex justify-center items-center w-[3.5rem] mt-10">
                       <Image size={20} color="#e0e0e0" />

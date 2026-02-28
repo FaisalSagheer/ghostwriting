@@ -18,7 +18,7 @@ function Home() {
         {/* <Process /> */}
         <Testimonials />
         <div className="bg-primary text-secondary-foreground">
-          <Faq />
+          {/* <Faq /> */}
         </div>
         {/* <Contact/> */}
       </ReactLenis>

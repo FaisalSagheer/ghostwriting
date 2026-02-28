@@ -16,8 +16,7 @@ const PoetsenOne = Playfair_Display({
 });
 
 export const metadata = {
-  title: "GhostWriting",
-  description: "",
+  title: "Digital Alchemy",
 };
 
 export default function RootLayout({ children }) {
