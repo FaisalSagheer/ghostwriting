@@ -5,7 +5,7 @@ import FaqCard from "../ui/FaqCard";
 function Faq() {
   return (
     <div>
-      <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-7xl mx-auto">
+      <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-[850px] mx-auto">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-6xl">Faqs</h2>
           <p className="text-lg md:text-[1rem] py-6 text-center">
@@ -13,8 +13,8 @@ function Faq() {
           </p>
         </div>
         <div >
-          <div className="flex flex-wrap lg:flex-nowrap lg:gap-26 justify-center items-center pt-10">
-            <div className="space-y-6">
+          <div className="flex flex-wrap lg:flex-nowrap justify-center items-center pt-10">
+            <div className="space-y-4">
               {FaqContent.map((item, index) =>
                 <FaqCard data={item} key={index} />
               )

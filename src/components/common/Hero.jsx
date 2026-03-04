@@ -33,7 +33,7 @@ function Hero() {
                 OUR PROFESSIONALS ARE HERE TO HELP YOU
               </h2>
               <p className="w-sm lg:w-xl font-light leading-6 text-lg text-primary/80">
-Fantastic books deserve to be in the spotlight. Our marketing team creates smart and focused marketing strategies to connect your book with your desired audience. We'll help you build momentum and make sales so you can attract long-term readers by publishing your book on the correct platform.              </p>
+                Fantastic books deserve to be in the spotlight. Our marketing team creates smart and focused marketing strategies to connect your book with your desired audience. We'll help you build momentum and make sales so you can attract long-term readers by publishing your book on the correct platform.              </p>
 
             </div>
             <div className="lg:pt-6 lg:mt-70 z-10">
@@ -47,22 +47,22 @@ Fantastic books deserve to be in the spotlight. Our marketing team creates smart
                     </HoverCardTrigger>
                     <HoverCardContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
-                        <Link href="#">Consultation</Link>
+                        <Link href="/servicesforauthors/consultation">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/ghostwriting">GhostWriting</Link>
+                        <Link href="/servicesforauthors/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Cover Design</Link>
+                        <Link href="/servicesforauthors/editing">Editing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/publishing">Publishing</Link>
+                        <Link href="/servicesforauthors/coverdesign">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/marketing">Marketing</Link>
+                        <Link href="/servicesforauthors/publishing">Publishing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Editing</Link>
+                        <Link href="/servicesforauthors/marketing">Marketing</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>
@@ -76,13 +76,13 @@ Fantastic books deserve to be in the spotlight. Our marketing team creates smart
                     </HoverCardTrigger>
                     <HoverCardContent className={HoverCardContentStyle}>
                       <DropdownMenuLabel>
-                        <Link href="#">Consultation</Link>
+                        <Link href="/servicesforbusinesses/consultation">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Social Media Management & Marketing</Link>
+                        <Link href="/servicesforbusinesses/socialmediamarketing">Social Media Management & Marketing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Website Design</Link>
+                        <Link href="/servicesforbusinesses/websitedesign">Website Design</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>

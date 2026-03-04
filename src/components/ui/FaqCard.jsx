@@ -14,7 +14,7 @@ function FaqCard(props) {
             <Accordion
                 type="multiple"
                 // collapisble
-                className="w-2xl"
+                className="md:w-2xl"
             // defaultValue="item-1"
             >
                 <AccordionItem value={value}>
@@ -22,7 +22,7 @@ function FaqCard(props) {
                         <h4 className="font-semibold lg:text-lg">{title}</h4>
                     </AccordionTrigger>
                     <AccordionContent className="leading-6.5">
-                        <p className="text-sm text-secondary-foreground md:whitespace-break-spaces">{description}</p>
+                        {description}
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>
