@@ -10,8 +10,19 @@ function TagLine() {
 
                 <div className='text-primary flex flex-wrap lg:flex-nowrap justify-around px-10 lg:px-24 py-10 lg:py-20'>
 
-                    <div className='pt-10 lg:pt-0 order-2 lg:order-1'>
-                        <img src="https://placehold.co/600x600/efefef/000000/png" className='rounded-2xl' alt="/" />
+                    <div className='pt-10 lg:pt-6 order-2 lg:order-1 w-5/10'>
+                        <video
+                            muted
+                            autoPlay
+                            loop
+                            playsInline    
+                            className='rounded'
+                        >
+                            <source
+                                src='/assets/placeholder.webm'
+                                type='video/webm'
+                            />
+                        </video>
                     </div>
                     <div className='flex flex-col space-y-2 order-1 lg:order-2'>
                         {/* <div>Tagline</div> */}

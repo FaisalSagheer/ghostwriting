@@ -40,7 +40,7 @@ function AccordionTrigger({
         {...props}>
           {children}
         <ChevronDownIcon
-          className="text-muted-foreground pointer-events-none size-6 shrink-0 translate-y-0.5 transition-transform duration-200 rounded-full border p-1" />
+          className="text-accent pointer-events-none size-6 shrink-0 translate-y-0.5 transition-transform duration-200 rounded-full border border-white p-1" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );
@@ -57,7 +57,7 @@ function AccordionContent({
       className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-[16px] text-card-foreground/60"
       {...props}>
       <div className={cn("pt-0 pb-4", className)}>
-        <p className="text-sm text-secondary-foreground">
+        <p className="text-sm text-accent">
           {children}
         </p>
       </div>

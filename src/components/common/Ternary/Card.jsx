@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+
 import React from 'react'
+import { Button } from '@/components/ui/button'
 
 function Card(props) {
-    const { className, src, icon, subtitle, title, description, href, type } = props.data
+    const { className, src, icon, subtitle, title, description, href, type, file } = props.data
     return (
         <>
             <div className='border rounded-2xl border-white/60 flex flex-col justify-center' >
@@ -21,9 +21,11 @@ function Card(props) {
                         <span className='text-sm'>{type}</span>
                     </div>
                     <Button className="hover:underline text-sm">
-                        <Link href={{href}}>
+                        <a href={href}
+                            download={file}
+                        >
                             Download Sample
-                        </Link>
+                        </a>
                     </Button>
                 </div>
             </div>

@@ -8,6 +8,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { LoginForm } from "@/components/login-form";
 import PixelSnow from "@/components/PixelSnow";
+import LiquidEther from "@/components/LiquidEther";
 
 const Hero = () => {
   return (
@@ -19,13 +20,20 @@ const Hero = () => {
           src="https://images.pexels.com/photos/1541216/pexels-photo-1541216.jpeg?_gl=1*ucvl6c*_ga*MTgxMTY4NjQwNS4xNzU4OTA3MzA3*_ga_8JE65Q40S6*czE3NTg5MDczMDYkbzEkZzEkdDE3NTg5MDc3ODQkajU5JGwwJGgw"
         /> */}
 
-        <div style={{ width: '100%', height: '600px', position: 'relative' }}>
-          <PixelSnow
-            pixelResolution={460}
-            speed={0.6}
-            variant="round"
-          />
-        </div>
+        <div style={{ width: '100%', height: '585px', position: 'relative' }}>
+          <LiquidEther
+              mouseForce={20}
+              cursorSize={100}
+              isViscous={false}
+              viscous={30}
+              colors={["#0000FF", "#0000FF", "#2329D4"]}
+              autoDemo
+              autoSpeed={0.5}
+              autoIntensity={2.2}
+              isBounce={false}
+              resolution={0.5}
+            />
+          </div>
       </div>
 
       <div className="relative z-10 px-8 md:px-12 py-28 max-w-3xl mx-auto">
@@ -36,10 +44,10 @@ const Hero = () => {
             <div className="text-gray-200 text-sm md:text-lg">
               <p className="leading-relaxed">
                 For 5 consecutive years, Digital Alchemy has provided top-tier services at the most affordable pricing. We aim to serve as catalysts, helping you grow and prosper: taking you in a unique and successful direction.
-              </p>
-              <p className="leading-relaxed">
                 Whether you’re an aspiring author or a business that requires the right kind of attention, we have a line of experts who will structure all your ideas and execute them in the best way possible
               </p>
+              {/* <p className="leading-relaxed">
+              </p> */}
             </div>
             <div className="flex justify-center gap-4 mt-6 lg:mt-8">
               <Popover>

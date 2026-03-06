@@ -4,7 +4,7 @@ import React from "react";
 import FaqCard from "../ui/FaqCard";
 function Faq() {
   return (
-    <div>
+    <div className="bg-background text-accent">
       <div className="py-10 lg:py-20 px-10 lg:px-14 max-w-[850px] mx-auto">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-6xl">Faqs</h2>

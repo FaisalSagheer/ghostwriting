@@ -16,7 +16,7 @@ function Locations() {
                     <div className='flex justify-between flex-wrap lg:flex-nowrap'>
                         <div>
                             <ul className='space-y-8'>
-                                    <div className='w-0.5 h-34 bg-primary/70 rounded-2xl absolute -ml-6 mt-1'></div>
+                                <div className='w-0.5 h-34 bg-primary/70 rounded-2xl absolute -ml-6 mt-1'></div>
                                 <li className='space-y-6'>
                                     <h2 className='text-4xl'>Sydney</h2>
                                     <p>Our Australian hub for Pacific region publishing support.</p>
@@ -40,12 +40,19 @@ function Locations() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='pt-10 lg:pt-0'>
-                            <img
-                                src="https://placehold.co/700x600/efefef/000000/png"
-                                alt="/"
-                                className='rounded-2xl'
-                            />
+                        <div className='pt-8 lg:pt-10 w-1/2'>
+                            <video
+                                muted
+                                autoPlay
+                                loop
+                                playsInline
+                                className='rounded'
+                            >
+                                <source
+                                    src='/assets/placeholder.webm'
+                                    type='video/webm'
+                                />
+                            </video>
                         </div>
                     </div>
 

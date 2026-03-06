@@ -23,14 +23,14 @@ function Navbar() {
 
   return (
     <nav className="bg-accent text-background">
-      <div className="mx-auto relative text-sm">
-        <div className="flex justify-between items-center py-4 lg:py-6 px-12">
+      <div className="mx-auto relative text-[0.9em]">
+        <div className="flex justify-between items-center py-4 lg:py-4 px-12">
           <div>
             <Link className="text-2xl" href="/">
-              <Image src={Logo} className="w-26 h-28 -my-5 lg:-my-10" alt="Logo" />
+              <Image src={Logo} className="w-22 h-26 -my-5 lg:-my-8" alt="Logo" />
             </Link>
           </div>
-          <div className="hidden lg:flex justify-center font-medium items-center cursor-pointer">
+          <div className="hidden lg:flex justify-center font-semibold items-center cursor-pointer">
 
             <div>
               <ul className="flex space-x-12">
@@ -55,6 +55,23 @@ function Navbar() {
                   Services
                   </Link>
                 </li> */}
+
+                <li>
+                  <Popover>
+                    <PopoverTrigger>Services For Businesses</PopoverTrigger>
+                    <PopoverContent className={HoverCardContentStyle}>
+                      <DropdownMenuLabel>
+                        <Link href="/servicesforbusinesses/consultation">Consultation</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/servicesforbusinesses/socialmediamarketing">Social Media Management & Marketing</Link>
+                      </DropdownMenuLabel>
+                      <DropdownMenuLabel>
+                        <Link href="/servicesforbusinesses/websitedesign">Website Design</Link>
+                      </DropdownMenuLabel>
+                    </PopoverContent>
+                  </Popover>
+                </li>
                 <li>
                   <Popover>
                     <PopoverTrigger>Services For Authors</PopoverTrigger>
@@ -76,22 +93,6 @@ function Navbar() {
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
                         <Link href="/servicesforauthors/marketing">Marketing</Link>
-                      </DropdownMenuLabel>
-                    </PopoverContent>
-                  </Popover>
-                </li>
-                <li>
-                  <Popover>
-                    <PopoverTrigger>Services For Businesses</PopoverTrigger>
-                    <PopoverContent className={HoverCardContentStyle}>
-                      <DropdownMenuLabel>
-                        <Link href="/servicesforbusinesses/consultation">Consultation</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="/servicesforbusinesses/socialmediamarketing">Social Media Management & Marketing</Link>
-                      </DropdownMenuLabel>
-                      <DropdownMenuLabel>
-                        <Link href="/servicesforbusinesses/websitedesign">Website Design</Link>
                       </DropdownMenuLabel>
                     </PopoverContent>
                   </Popover>

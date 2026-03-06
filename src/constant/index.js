@@ -482,8 +482,9 @@ export const servicesGhostwriting = [
     src: "https://placehold.co/600x400/efefef/000000/png",
     tag: "Tagline",
     title: "Spiritual & Religion",
-    type: "Non-Fiction",
-    href: "/",
+    // type: "Non-Fiction",
+    href: "/assets/spirituality_and_religion_sample.pdf",
+    file: "spirituality_and_religion_sample.pdf",
     description:
       `Christian Demonology, a subset of Angelology (the study of angels), gives light on a 
 variety of questions, including who or what demons are, what they do, who or what they 
@@ -491,39 +492,62 @@ serve, and what happens to them after death.`,
   },
   {
     icon: <Album size={60} />,
-    title: "Autobiography",
+    title: "Steamy Romance Sample",
     description:
-      "Share your life story with authenticity and depth to resonate with readers",
+      `The hands of the clock seemed to mock me as the day wore on, each passing
+hour deepening the wound of disappointment. I had waited, alone and abandoned,
+in the hotel lobby for Cyrus to arrive. But as the sun sank beneath the horizon, I
+could no longer contain the surge of anger that boiled within me.`,
+    href: "/assets/steamy_romance_sample.pdf",
+    file: "steamy_romance_sample.pdf",
     className: "hidden",
   },
   {
     src: "https://placehold.co/600x400/efefef/000000/png",
     tag: "Tagline",
-    title: `Childrens Book`,
+    title: `Sci-fi`,
     description:
-      "Engage young readers with enchanting tales and characters that spark their imagination.",
+      `Taj barely had time to flinch as the lean, handsome man seated in front of 
+him moved with death in his synthetic eyes. It was not a voluntary movement; he 
+flinched more because of the gust of wind the man had generated than any fear 
+for his safety.`,
+    href: "/assets/sci-fi.pdf",
+    file: "sci-fi.pdf",
     className: "mb-auto",
   },
   {
     icon: <Briefcase size={60} />,
-    title: "Business Book Writing",
+    title: "Werewolf Sample",
     description:
-      "Establish your thought leadership with books that share your expertise and vision. ",
+      `I hear a deafening crack of gunfire breaking the silence and lighting up the deep woods for a split
+second. I turn around to see where it is coming from, but as I move, I realize my right ear is burning as if
+a hot needle had grazed across my skin.`,
+    href: "/assets/Werewolf_sample.pdf",
+    file: "Werewolf_sample.pdf",
     className: "hidden",
   },
   {
     src: "https://placehold.co/600x400/efefef/000000/png",
     tag: "Tagline",
-    title: "Non-Fiction Writing",
+    title: "Proofreading Sample",
     description:
-      "Transform your ideas into compelling non-fiction that informs and inspires.",
+      `Before she can retaliate, I turn her around and pin her against the wall
+with her hands behind her back. With one hand, I remove her hair from
+her ear and begin whispering.`,
+    href: "/assets/Betareading_Proofreading.pdf",
+    file: "Betareading_Proofreading.pdf",
+
   },
   {
     icon: <Box size={60} />,
     tag: "Tagline",
-    title: "ScriptWriting",
+    title: "Romance Sample",
     description:
-      "Bring your story to the big screen with engaging scripts for film, television, or theater.",
+      `They held each other firmly as one’s lips lingered over the other. Joseph was whole 
+here. It was a feeling he had always ignored. He never knew how complete he was 
+here. After softly kissing his wife good morning, he gave her a peck and then another.`,
+    href: "/assets/romance_sample_01.pdf",
+    file: "romance_sample_01.pdf",
     className: "hidden",
   },
 ];
@@ -575,7 +599,7 @@ export const coverdesignHero = [
     // subTitle: "Transform",
     title: "Consultation Services",
     description:
-    "They say a book cannot be judged by its cover. However, your book can literally be. Our cover design team will help you develop visually appealing, genre-smart covers that capture the soul of your novel. We use innovative ideas and market intelligence to make your book stand out on shelves and on screens. We work with our team of illustrators and designers and breathe life into your book.",
+      "They say a book cannot be judged by its cover. However, your book can literally be. Our cover design team will help you develop visually appealing, genre-smart covers that capture the soul of your novel. We use innovative ideas and market intelligence to make your book stand out on shelves and on screens. We work with our team of illustrators and designers and breathe life into your book.",
     href1: "",
     href2: "",
     button1: "Start",
@@ -589,7 +613,7 @@ export const editingHero = [
     // subTitle: "Transform",
     title: "Consultation Services",
     description:
-    "Every great piece of literature can be remembered if it is edited well. Our editors improve your manuscript's clarity, flow, and consistency while maintaining your original voice. Our expert editors and proofreaders make sure that every page of your book is polished so that it reads smoothly, professionally, and with the impact your story deserves.",
+      "Every great piece of literature can be remembered if it is edited well. Our editors improve your manuscript's clarity, flow, and consistency while maintaining your original voice. Our expert editors and proofreaders make sure that every page of your book is polished so that it reads smoothly, professionally, and with the impact your story deserves.",
     href1: "",
     href2: "",
     button1: "Start",

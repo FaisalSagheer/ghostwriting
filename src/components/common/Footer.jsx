@@ -109,8 +109,8 @@ const Footer = () => {
                 <h4 className="text-sm">Contact</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li className={anima}>info@Alchemy.com</li>
-                  <li className={anima}>Wall Street,New York</li>
-                  <li className={anima}>123456789</li>
+                  {/* <li className={anima}>Wall Street,New York</li> */}
+                  <li className={anima}>877 - 416 - 8425</li>
                 </ul>
               </div>
             </div>

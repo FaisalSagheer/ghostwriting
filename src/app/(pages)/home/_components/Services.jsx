@@ -17,7 +17,7 @@ function Services() {
         <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
           <div className="py-8 px-10 lg:px-0">
             <h2 className="lg:pl-6 text-4xl md:text-6xl xl:text-8xl font-bold leading-10 md:leading-14 xl:leading-20 lg:w-xl capitalize">
-              Professional GhostWriters Are Here To Help You!{" "}
+              Professionals Are Here To Help You!{" "}
             </h2>
             <p className="lg:pl-6 lg:w-lg font-light py-8 leading-6 text-primary/80">
               When you team up with us, you're not just hiring a company to get the work done: you're getting personalized assistance at every step. We take care of the nitty-gritty of every single thing, so you can focus on what you do best.
@@ -27,24 +27,24 @@ function Services() {
                 <li>
                   <HoverCard>
                     <HoverCardTrigger className={buttonStyle}>Services For Authors</HoverCardTrigger>
-                    <HoverCardContent className='w-[16rem] lg:w-[16rem]'>
+                    <HoverCardContent className='w-[16rem] lg:w-[16rem] text-sm text-center! space-y-2'>
                       <DropdownMenuLabel>
-                        <Link href="#">Consultation</Link>
+                        <Link href="/servicesforauthors/consultation">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/ghostwriting">GhostWriting</Link>
+                        <Link href="/servicesforauthors/ghostwriting">GhostWriting</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Cover Design</Link>
+                        <Link href="/servicesforauthors/editing">Editing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/publishing">Publishing</Link>
+                        <Link href="/servicesforauthors/coverdesign">Cover Design</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="/marketing">Marketing</Link>
+                        <Link href="/servicesforauthors/publishing">Publishing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Editing</Link>
+                        <Link href="/servicesforauthors/marketing">Marketing</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>
@@ -52,15 +52,15 @@ function Services() {
                 <li>
                   <HoverCard>
                     <HoverCardTrigger className={buttonStyle}>Services For Businesses</HoverCardTrigger>
-                    <HoverCardContent className='w-[16rem] lg:w-[16rem]'>
+                    <HoverCardContent className='w-[16rem] lg:w-[16rem] text-sm text-center! space-y-2'>
                       <DropdownMenuLabel>
-                        <Link href="#">Consultation</Link>
+                        <Link href="/servicesforbusinesses/consultation">Consultation</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Social Media Management & Marketing</Link>
+                        <Link href="/servicesforbusinesses/socialmediamarketing">Social Media Management & Marketing</Link>
                       </DropdownMenuLabel>
                       <DropdownMenuLabel>
-                        <Link href="#">Website Design</Link>
+                        <Link href="/servicesforbusinesses/websitedesign">Website Design</Link>
                       </DropdownMenuLabel>
                     </HoverCardContent>
                   </HoverCard>

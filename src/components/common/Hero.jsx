@@ -1,22 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import Contact from "./ContactModal";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
 import Img from '@/../public/assets/HeroCommon.png'
 import Image from "next/image";
-import { DropdownMenuLabel } from "../ui/dropdown-menu";
-
 function Hero() {
-  const buttonStyle = 'border-2 border-white/60 rounded-3xl px-10 py-6 text-lg font-semibold'
-  const HoverCardContentStyle = 'w-[16rem] lg:w-[16rem]'
+  const buttonStyle = 'border-2 border-white/60 rounded-3xl px-10 py-4 text-lg font-semibold'
   return (
     <>
-      <div className="text-primary relative py-18 lg:pb-16 lg:py-26">
+      <div className="text-primary relative py-18 lg:pb-16 lg:py-26 max-h-[80vh] h-screen">
         <div className="absolute inset-0">
           <Image
             className="absolute -z-10 bg-cover bg-center bg-no-repeat w-screen h-dvh md:h-screen lg:h-full"
@@ -26,7 +17,7 @@ function Hero() {
           />
         </div>
         <div className="px-12 lg:px-14 text-center lg:text-left mx-auto">
-          <div className="flex justify-between flex-wrap lg:flex-nowrap items-center space-y-10 lg:space-y-0 lg:gap-38">
+          <div className="flex flex-wrap lg:flex-nowrap space-y-10 lg:space-y-0 lg:gap-38">
             <div className="space-y-6">
               <h2 className="text-5xl lg:text-7xl font-bold leading-14 lg:leading-18 w-sm lg:w-xl">
                 {/* Professional GhostWriters Are Here To Help You!{" "} */}
@@ -36,7 +27,7 @@ function Hero() {
                 Fantastic books deserve to be in the spotlight. Our marketing team creates smart and focused marketing strategies to connect your book with your desired audience. We'll help you build momentum and make sales so you can attract long-term readers by publishing your book on the correct platform.              </p>
 
             </div>
-            <div className="lg:pt-6 lg:mt-70 z-10">
+            {/* <div className="lg:pt-6 lg:mt-70 z-10">
               <div className="px-12 flex justify-center items-center list-none gap-y-8 flex-col font-light cursor-pointer">
                 <li>
                   <HoverCard>
@@ -87,6 +78,13 @@ function Hero() {
                     </HoverCardContent>
                   </HoverCard>
                 </li>
+              </div>
+            </div> */}
+            <div className="flex items-end z-10">
+              <div className={buttonStyle}>
+                <Link href='/contact'>
+                  Talk to Consultant
+                </Link>
               </div>
             </div>
           </div>

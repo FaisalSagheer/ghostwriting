@@ -18,7 +18,7 @@ function FaqCard(props) {
             // defaultValue="item-1"
             >
                 <AccordionItem value={value}>
-                    <AccordionTrigger className="">
+                    <AccordionTrigger>
                         <h4 className="font-semibold lg:text-lg">{title}</h4>
                     </AccordionTrigger>
                     <AccordionContent className="leading-6.5">

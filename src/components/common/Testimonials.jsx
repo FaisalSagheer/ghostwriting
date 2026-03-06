@@ -1,8 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { cardData, Testimonial } from "@/constant";
-import { ArrowRight, Image } from "lucide-react";
-import Link from "next/link";
+import { Testimonial } from "@/constant";
+import { Star } from "lucide-react";
+// import { ArrowRight, Image } from "lucide-react";
 import React from "react";
 
 function Testimonials() {
@@ -25,12 +24,18 @@ function Testimonials() {
                 >
                   <p>{item.description}</p>
                   <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-primary/50 px-3 py-4 flex justify-center items-center w-[3.5rem] mt-10">
+                    {/* <div className="rounded-full bg-primary/50 px-3 py-4 flex justify-center items-center w-[3.5rem] mt-10">
                       <Image size={20} color="#e0e0e0" />
-                    </div>
-                    <div className="pt-10">
-                      <h4 className="text-sm">{item.Name}</h4>
+                    </div> */}
+                    <div className="pt-3">
+                      <h4 className="text-sm pb-2">{item.Name}</h4>
                       {/* <h6 className="text-xs text-gray-200">Architect</h6> */}
+                      <span className="flex gap-1">
+                        <Star size={16} color="gold" fill="gold" />
+                        <Star size={16} color="gold" fill="gold" />
+                        <Star size={16} color="gold" fill="gold" />
+                        <Star size={16} color="gold" fill="gold" />
+                      </span>
                     </div>
                   </div>
                 </div>
